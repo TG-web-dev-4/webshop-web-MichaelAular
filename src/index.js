@@ -1,22 +1,16 @@
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import Page1 from "./routes/page1"
-import Page2 from "./routes/page2"
-import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./store"
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="Page1" element={<Page1 />} />
-      <Route path="Page2" element={<Page2 />} />
-    </Routes>
+    <Provider store={store}>
+      <App />
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

@@ -1,21 +1,36 @@
+import { Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import { Link } from "react-router-dom";
-import './App.css';
+import Navbar from "./components/Navbar";
+
+import Home from "./routes/home";
+import Page1 from "./routes/page1";
+import Page2 from "./routes/page2";
+import "./App.css";
+
 
 function App() {
+  const counter = useSelector(state => state.counterReducer);
+
   return (
-    <div className="App">
-      <p>HomePage</p>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem"
-        }}
-      >
-        <Link to="/page1">Page One</Link> |{" "}
-        <Link to="/page2">Page Two</Link>
-      </nav>
-    </div>
+    <>
+      <h3>products in cart: {counter}</h3>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="page1" element={<Page1 />} />
+        <Route path="page2" element={<Page2 />} />
+        <Route
+          path="*"
+          element={
+            <main>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+      </>
   );
 }
 

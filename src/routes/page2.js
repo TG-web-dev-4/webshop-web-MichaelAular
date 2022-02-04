@@ -1,7 +1,10 @@
+import Addbuttons from "../components/Product";
+
 export default function Page2() {
     return (
-      <main style={{ padding: "1rem 0" }}>
+        <>
         <h2>Page Two</h2>
-      </main>
+        <Addbuttons />
+        </>
     );
   }
