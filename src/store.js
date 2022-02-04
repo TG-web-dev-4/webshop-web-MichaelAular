@@ -1,9 +1,8 @@
 import { createStore } from "redux";
 import { devToolsEnhancer } from "redux-devtools-extension";
-import  counterReducer  from "./reducers";
-
+import  allReducers  from "./reducers/allReducers";
 
 export const store = createStore(
-    counterReducer,
+    allReducers,
     devToolsEnhancer()
     );
