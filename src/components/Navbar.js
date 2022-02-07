@@ -6,7 +6,7 @@ let shoppingbagCounter = ""
 export default function NavBar() {
   const counter = useSelector(state => state.counterReducer);
   const displayedCounter = () => {
-    if (counter <= 0) shoppingbagCounter=""
+    if (counter <= 0) shoppingbagCounter="0"
     if (counter > 0) shoppingbagCounter = counter;
   }
 

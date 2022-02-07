@@ -10,11 +10,12 @@ import "./css/main.css";
 
 function App() {
   const counter = useSelector(state => state.counterReducer);
-
+  console.log(counter)
+  
   return (
     <>
       <Navbar />
-      <h3>products in cart: {counter}</h3>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="man" element={<Man />} />
@@ -33,5 +34,7 @@ function App() {
       </>
   );
 }
+
+
 
 export default App;
