@@ -1,0 +1,73 @@
+@font-face {
+  font-family: mainFont;
+  src: url(/src/fonts/himalaya.ttf);
+}
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+.navbar :link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+.navbar :visited {
+  color: black;
+}
+
+.nav_links {
+  display: flex;
+  gap: 15px;
+}
+.nav_links :hover {
+  color: #956503;
+}
+
+.nav_icons {
+  display: flex;
+  position: relative;
+  gap: 15px;
+}
+.nav_icons :hover {
+  color: #956503;
+}
+.nav_icons .nav_shoppingbagcounter {
+  position: absolute;
+  right: -30px;
+  bottom: -8px;
+}
+
+nav_name {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.nav_shoppingbagcounter {
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  padding: 3px;
+  height: 18px;
+  width: 18px;
+  border: 2px solid white;
+  border-radius: 50%;
+  left: 90px;
+  top: -10px;
+  color: white;
+  background-color: black;
+}
+
+body {
+  font-family: mainFont;
+  font-size: 1.5em;
+  padding-top: 30px;
+}/*# sourceMappingURL=main.css.map */

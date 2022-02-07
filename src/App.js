@@ -1,26 +1,26 @@
 import { Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
-
 import Navbar from "./components/Navbar";
-
 import Home from "./routes/home";
-import Page1 from "./routes/page1";
-import Page2 from "./routes/page2";
-import "./App.css";
-
+import Man from "./routes/man";
+import Woman from "./routes/woman";
+import Aboutus from "./routes/aboutus";
+import Contact from "./routes/contact";
+import "./css/main.css";
 
 function App() {
   const counter = useSelector(state => state.counterReducer);
 
   return (
     <>
-      <h3>products in cart: {counter}</h3>
       <Navbar />
-
+      <h3>products in cart: {counter}</h3>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="page1" element={<Page1 />} />
-        <Route path="page2" element={<Page2 />} />
+        <Route path="man" element={<Man />} />
+        <Route path="woman" element={<Woman />} />
+        <Route path="aboutus" element={<Aboutus />} />
+        <Route path="contact" element={<Contact />} />
         <Route
           path="*"
           element={

@@ -1,9 +1,9 @@
 import Addbuttons from "../components/Product";
 
-export default function Page1() {
+export default function Man() {
   return (
     <>
-      <h2>Page One</h2>
+      <h2>Man</h2>
       <Addbuttons />
     </>
   );
