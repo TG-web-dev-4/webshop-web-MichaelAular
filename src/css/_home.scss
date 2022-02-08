@@ -1,24 +1,58 @@
-
+@import './colors';
 
 .home_img_container {
     position: relative;
-    left: -30px;
-    width: 100%;
-    height: 600px;
+    left: 45vw;
+    width: 50vw;
+    height: 700px;
     background-image: url('../images/photo/000a.webp');
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
-    font-size: 210px;
-    padding-top: 20vh;
+    background-position: 420px -100px;
+    background-size: 1500px;
+    background-attachment: fixed;
+}
+
+.home_img_text {
+    width: 300px;
+    font-size: 150px;
+    position: absolute;
+    left: 30px;
+    top: 260px;
+    line-height: 0.5;
+    padding-bottom: -140px;
+}
+
+span {
+    color: $darkbrown
+}
+
+.home_summeradd_container {
+    position: relative;
+    width: 100vw;
+    height: 380px;
+    top: 200px;
+    left: -47vw;
+    padding-left: 180px;
+    background-color: $offwhite;
+    z-index: 	-1;
+}
+
+.home_summeradd_text {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    top: 50px;
+    font-size: 2em;
+    line-height: 0.7;
+}
+
+
+
+.home_summercollection_button {
+    position: relative;
+    bottom: -10px;
+    left: 10px;
 }
 
 .home_text {
     margin-right: 50px;
-}
-
-.home_img_text {
-    position: relative;
-    right: -50vw;
-    bottom: -100px;
 }
