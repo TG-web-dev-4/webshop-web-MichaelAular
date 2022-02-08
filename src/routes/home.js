@@ -13,14 +13,14 @@ export default function Home() {
           <div className="home_img_text">
             <span>Small Steps.</span> <br></br>
             Big Changes.
-          </div>
-
-          <div className="home_summeradd_container">
-          <div className="home_summeradd_text">
+            <div className="home_summeradd_text">
             The new Summercollection is here! Remember when you were young?
             You shone like the sun. Shine on you crazy diamond.
             <Link to="../man/summercollection"><button className="bigblackbutton home_summercollection_button">Shop New Arivals</button></Link>
-          </div></div>
+          </div>
+          </div>
+
+          <div className="home_summeradd_container"></div>
 
           </div>
 
