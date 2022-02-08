@@ -1,4 +1,4 @@
-import Addbuttons from "../components/Product";
+import Addbuttons from "../components/Addtocartbuttons";
 import React, { useEffect} from "react";
 
 export default function Contact() {

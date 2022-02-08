@@ -137,6 +137,20 @@ span {
   color: #d59d24;
 }
 
+.CartButtons {
+  background-color: black;
+  color: #f6efe5;
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bolder;
+}
+.CartButtons:hover {
+  color: #d59d24;
+}
+
 body {
   position: absolute;
   font-family: mainFont;

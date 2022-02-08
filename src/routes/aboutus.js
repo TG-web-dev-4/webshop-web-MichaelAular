@@ -1,4 +1,4 @@
-import Addbuttons from "../components/Product";
+import Addbuttons from "../components/Addtocartbuttons";
 import React, { useEffect} from "react";
 
 export default function Aboutus() {
@@ -8,7 +8,7 @@ export default function Aboutus() {
 
     return (
         <>
-        <h2>Aboutus</h2>
+        <h2>About Us</h2>
         <Addbuttons />
         </>
     );
