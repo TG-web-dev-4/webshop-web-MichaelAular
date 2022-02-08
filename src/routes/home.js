@@ -1,8 +1,18 @@
+import React, { useEffect} from "react";
+
 export default function Home() {
+    useEffect(() => {
+        document.title = "Patro Afero | Home";  
+      }, []);
+
     return (
         <div className="home">
+
             <div className="home_img_container">
-                New Summer Collection!
+                <div className="home_img_text">
+                Small Steps.<br></br>
+                Big Changes.
+                </div>
             </div>
             <div className="home_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis scelerisque, consectetur leo sed, tristique odio. Aenean libero purus, iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque tortor vel scelerisque. Nullam ut condimentum nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus est quis convallis consequat. Fusce vulputate dui et felis ornare, sit amet fringilla mi placerat. Vivamus id lorem ante. Nunc nunc metus, aliquam in sodales eget, faucibus eget neque. Integer volutpat molestie eleifend.

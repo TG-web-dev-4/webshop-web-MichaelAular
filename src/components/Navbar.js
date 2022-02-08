@@ -26,10 +26,11 @@ return (
     </div>
 
     <div className="nav_icons">
+      <Link to="/" className="fas fa-home" />
       <link className="fas fa-search" />
       <link className="fas fa-user" />
       <link className="fas fa-shopping-bag" />
-        <div className="nav_shoppingbagcounter">
+      <div className="nav_shoppingbagcounter">
           {shoppingbagCounter}
         </div>
     </div>
