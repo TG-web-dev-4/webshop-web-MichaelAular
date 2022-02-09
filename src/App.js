@@ -6,6 +6,7 @@ import Man from "./routes/man";
 import Woman from "./routes/woman";
 import Aboutus from "./routes/aboutus";
 import Contact from "./routes/contact";
+import Oops from "./routes/oops";
 import Summercollection from "./routes/man/summercollection";
 import "./css/main.css";
 
@@ -23,7 +24,7 @@ function App() {
         <Route path="aboutus" element={<Aboutus />} />
         <Route path="contact" element={<Contact />} />
         <Route path="man/summercollection" element={<Summercollection />} />
-        <Route path="*" element={<main><p>There's nothing here!</p></main>}/>
+        <Route path="*" element={<Oops />}/>
       </Routes>
       </>
   );

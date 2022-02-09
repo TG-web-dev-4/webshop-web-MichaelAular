@@ -151,6 +151,17 @@ span {
   color: #d59d24;
 }
 
+.oops {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30vh;
+  line-height: 0.1;
+}
+
+.oops_sandal {
+  height: 50px;
+}
+
 body {
   position: absolute;
   font-family: mainFont;
