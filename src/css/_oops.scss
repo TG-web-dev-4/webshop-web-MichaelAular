@@ -1,10 +1,12 @@
 .oops {
+    position: relative;
+    height: 250px;
+    width: 100vw;
+    background-color: $offwhite;
     font-size: 40px;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 15vh;
+    padding-top: 80px;
     line-height: 0.1;
-}
-
-.oops_sandal {
-    height: 50px;
+    left: -20px;
 }

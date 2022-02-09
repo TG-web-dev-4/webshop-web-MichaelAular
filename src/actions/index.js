@@ -17,9 +17,3 @@ export const displayItem = (id) => {
         payload: id
     }
 }
-
-export const displayAll = () => {
-    return {
-        type: "DISPLAY_ALL"
-    }
-}

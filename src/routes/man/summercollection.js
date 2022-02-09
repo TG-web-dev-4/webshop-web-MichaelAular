@@ -1,31 +1,31 @@
 import Addbuttons from "../../components/Addtocartbuttons";
 import React, { useEffect} from "react";
+import { useSelector } from "react-redux";
 
 export default function Summercollection() {
-
   useEffect(() => {
     document.title = "Patro Afero | NEW Summer Collection";
   }, []);
 
+  const id=0
+  const products = useSelector(state => state.productReducer);
+
+  const item = products.find((product) => product.id === id)
+  console.log(item.imgName)
+
+
   return (
-    <div className="summercollection">
+    <div className="productpage">
 
-      <div className="summercollection_text">
-        <h2>Brand New Summercollection</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis
-        scelerisque, consectetur leo sed, tristique odio. Aenean libero purus,
-        iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque
-        tortor vel scelerisque. Nullam ut condimentum nisl. Orci varius natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Sed tempus est quis convallis consequat.</h3>
-      </div>
-
-      <div className="summercollection_foto"></div>
-
-      <div className="summercollection_order">
+      <div className="productpage_text">
+        <h2>{item.title}</h2>
+        <h3>{item.info}</h3>
         <Addbuttons/>
       </div>
+
+        <img className="productpage_pic" src={require(`../../images/photo/${item.imgName}`)} />
+        {/* <div className="productpage_lyric">{item.lyric}</div> */}
+
 
     </div>
   );

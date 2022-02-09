@@ -1,32 +1,33 @@
 const product=[
     {
-        id: "001",
-        pic: "001",
+        id: 0,
         name: "Brownnosers",
         collors: "brown / white",
-        price: 96,
+        price: 196,
+        imgName: '001.jpg',
         size: "38, 39, 40, 41, 42, 43, 44",
-        info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis scelerisque, consectetur leo sed, tristique odio. Aenean libero purus, iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque tortor vel scelerisque. Nullam ut condimentum nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus est quis convallis consequat"
+        title: "Brand New Brownnosers have finaly arived!",
+        info: "With our cool new Brownnosers you'll be the king of the castle. The sand Castle that is! Consider yourself the sexiest man on the beach with this ultimate Sandal-Sock-Combo. The materials we used for this beautifull set is a combination of pure synthetic cotton for the socks combined with a leatherlook sandal. The sandals come with a plastic footbed for all your watersportfans pleasures. Just remember it's Summertime, and the livin' is easy Fish are jumpin' and the cotton is high. Oh, your daddy's rich and your ma is good lookin'. So hush, little baby, baby don't you cry"
     },
     {
-        id: "002",
-        pic: "002",
+        id: 1,
         name: "BrownOff",
         collors: "brown / gray",
-        price: 74,
+        price: 174,
+        imgName: '002.jpg',
         size: "38, 39, 40, 41, 42, 43, 44",
+        title: "TITLE HERE!",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis scelerisque, consectetur leo sed, tristique odio. Aenean libero purus, iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque tortor vel scelerisque. Nullam ut condimentum nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus est quis convallis consequat"
-
     },
     {
-        id: "003",
-        pic: "003",
+        id: 2,
         name: "Cootie Brown",
         collors: "Brown / yelowish",
-        price: 74,
+        price: 134,
+        imgName: '003.jpg',
         size: "38, 39, 40, 41, 42, 43, 44",
+        title: "TITLE HERE!",
         info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis scelerisque, consectetur leo sed, tristique odio. Aenean libero purus, iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque tortor vel scelerisque. Nullam ut condimentum nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tempus est quis convallis consequat"
-
     }
 ]
 

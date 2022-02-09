@@ -1,0 +1,23 @@
+.productpage {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 520px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    background-color: $offwhite;
+    margin-top: 50px;
+}
+
+.productpage_pic {
+    position: relative;
+    height: 600px;
+    width: auto;
+    top: -50px;
+}
+
+.productpage_text {
+    width: 400px;
+    margin-right: 12vw;
+    line-height: 0.9;
+}

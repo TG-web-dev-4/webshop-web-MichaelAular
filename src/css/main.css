@@ -12,14 +12,13 @@
   top: 0px;
   left: -10px;
   height: 80px;
-  width: 100vw;
+  width: 101vw;
   background-color: white;
   color: black;
 }
 .navbar :link {
   text-decoration: none;
   color: black;
-  font-size: 1.1em;
 }
 .navbar :visited {
   color: black;
@@ -27,7 +26,9 @@
 
 .nav_links {
   display: flex;
-  gap: 15px;
+  gap: 22px;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 .nav_links :hover {
   color: #956503;
@@ -95,7 +96,7 @@ span {
   top: 125px;
   left: -47vw;
   padding-left: 165px;
-  background-color: #f6efe5;
+  background-color: #f0edd2;
   z-index: -1;
 }
 
@@ -139,27 +140,54 @@ span {
 
 .CartButtons {
   background-color: black;
-  color: #f6efe5;
+  color: #f0edd2;
   border: none;
   height: 25px;
   width: 25px;
   border-radius: 2px;
   margin: 1px;
   font-weight: bolder;
+  font-size: 22px;
 }
 .CartButtons:hover {
   color: #d59d24;
 }
 
 .oops {
+  position: relative;
+  height: 250px;
+  width: 100vw;
+  background-color: #f0edd2;
   font-size: 40px;
   text-align: center;
-  margin-top: 30vh;
+  margin-top: 15vh;
+  padding-top: 80px;
   line-height: 0.1;
+  left: -20px;
 }
 
-.oops_sandal {
-  height: 50px;
+.productpage {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 520px;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  background-color: #f0edd2;
+  margin-top: 50px;
+}
+
+.productpage_pic {
+  position: relative;
+  height: 600px;
+  width: auto;
+  top: -50px;
+}
+
+.productpage_text {
+  width: 400px;
+  margin-right: 12vw;
+  line-height: 0.9;
 }
 
 body {

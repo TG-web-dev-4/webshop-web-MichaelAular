@@ -1,14 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { displayItem } from "../actions";
-import { useDispatch } from "react-redux";
-
 
 export default function Home() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    document.title = "Patro Afero | Home";
-  }, []);
 
   return (
     <div className="home">
@@ -20,7 +13,7 @@ export default function Home() {
             The new Summercollection is here! Remember when you were young? You
             shone like the sun. Shine on you crazy diamond.
             <Link to="../man/summercollection">
-              <button className="bigblackbutton home_summercollection_button" onClick={() => dispatch(displayItem())}>
+              <button className="bigblackbutton home_summercollection_button">
                 Shop New Arivals
               </button>
             </Link>

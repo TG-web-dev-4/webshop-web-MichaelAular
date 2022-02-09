@@ -10,21 +10,21 @@
     top: 0px;
     left: -10px;
     height: 80px;
-    width: 100vw;
+    width: 101vw;
     background-color: $white;
     color: $black;
     :link {
         text-decoration:none;
-        color: $black;
-        font-size: 1.1em;
-        }
+        color: $black;}
     :visited {
         color: $black;}
 }
 
 .nav_links {
     display: flex;
-    gap: 15px;
+    gap: 22px;
+    font-size: 1.1em;
+    font-weight: bold;
     :hover {
         color: $brown;}
 }
