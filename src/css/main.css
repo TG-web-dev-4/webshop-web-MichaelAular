@@ -73,6 +73,7 @@ nav_name {
   background-position: 420px -100px;
   background-size: 1500px;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .home_img_text {
@@ -174,7 +175,7 @@ span {
   padding-left: 9vw;
   padding-right: 9vw;
   background-color: #f0edd2;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .productpage_pic {
@@ -182,6 +183,7 @@ span {
   height: 600px;
   width: auto;
   top: -50px;
+  box-shadow: 3px 3px 10px #3c2800;
 }
 
 .productpage_text {
