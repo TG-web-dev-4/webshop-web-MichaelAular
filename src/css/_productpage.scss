@@ -18,7 +18,17 @@
 }
 
 .productpage_text {
+    text-align: justify;
     width: 400px;
     margin-right: 12vw;
     line-height: 0.9;
+}
+
+.productpage_button_container {
+    position: relative;;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 406px;
+    left: -2px;
 }

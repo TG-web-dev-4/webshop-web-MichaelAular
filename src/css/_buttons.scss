@@ -15,7 +15,7 @@
     }
 }
 
-.CartButtons {
+.AddtocartButtons {
     background-color: $black;
     color: $offwhite;
     border: none;
@@ -24,7 +24,7 @@
     border-radius: 2px;
     margin: 1px;
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 16px;
     &:hover {
         color: $midbrown;
     }

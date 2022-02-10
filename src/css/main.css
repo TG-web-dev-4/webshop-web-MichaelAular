@@ -139,7 +139,7 @@ span {
   color: #d59d24;
 }
 
-.CartButtons {
+.AddtocartButtons {
   background-color: black;
   color: #f0edd2;
   border: none;
@@ -148,9 +148,9 @@ span {
   border-radius: 2px;
   margin: 1px;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 16px;
 }
-.CartButtons:hover {
+.AddtocartButtons:hover {
   color: #d59d24;
 }
 
@@ -193,9 +193,53 @@ span {
 }
 
 .productpage_text {
+  text-align: justify;
   width: 400px;
   margin-right: 12vw;
   line-height: 0.9;
+}
+
+.productpage_button_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 406px;
+  left: -2px;
+}
+
+.sizeselector {
+  text-align: center;
+  background-color: #f0edd2;
+  color: black;
+  border: 2px solid black;
+  height: 25px;
+  width: 180px;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.sizeselector:hover {
+  color: #d59d24;
+  background-color: black;
+}
+
+.colorselector {
+  text-align: center;
+  background-color: #f0edd2;
+  color: black;
+  border: 2px solid black;
+  height: 25px;
+  width: 180px;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.colorselector:hover {
+  color: #d59d24;
+  background-color: black;
 }
 
 body {
