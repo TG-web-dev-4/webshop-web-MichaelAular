@@ -97,7 +97,7 @@ span {
   top: 125px;
   left: -47vw;
   padding-left: 165px;
-  background-color: #f0edd2;
+  background-color: #c7c29b;
   z-index: -1;
 }
 
@@ -139,9 +139,9 @@ span {
   color: #d59d24;
 }
 
-.AddtocartButtons {
-  background-color: black;
-  color: #f0edd2;
+.squaredButton {
+  background-color: #3c2800;
+  color: #c7c29b;
   border: none;
   height: 25px;
   width: 25px;
@@ -150,7 +150,7 @@ span {
   font-weight: bolder;
   font-size: 16px;
 }
-.AddtocartButtons:hover {
+.squaredButton:hover {
   color: #d59d24;
 }
 
@@ -158,7 +158,7 @@ span {
   position: relative;
   height: 250px;
   width: 100vw;
-  background-color: #f0edd2;
+  background-color: #c7c29b;
   font-size: 40px;
   text-align: center;
   margin-top: 15vh;
@@ -180,7 +180,7 @@ span {
   height: 520px;
   padding-left: 9vw;
   padding-right: 9vw;
-  background-color: #f0edd2;
+  background-color: #c7c29b;
   margin-top: 70px;
 }
 
@@ -189,7 +189,7 @@ span {
   height: 600px;
   width: auto;
   top: -50px;
-  box-shadow: 3px 3px 10px #3c2800;
+  box-shadow: 3px 3px 10px black;
 }
 
 .productpage_text {
@@ -210,36 +210,86 @@ span {
 
 .sizeselector {
   text-align: center;
-  background-color: #f0edd2;
-  color: black;
-  border: 2px solid black;
+  background-color: #3c2800;
+  color: #c7c29b;
   height: 25px;
   width: 180px;
   border-radius: 2px;
+  border: none;
   margin: 1px;
   font-weight: bolder;
   font-size: 14px;
 }
 .sizeselector:hover {
   color: #d59d24;
-  background-color: black;
 }
 
 .colorselector {
   text-align: center;
-  background-color: #f0edd2;
-  color: black;
-  border: 2px solid black;
+  background-color: #3c2800;
+  color: #c7c29b;
   height: 25px;
   width: 180px;
   border-radius: 2px;
+  border: none;
   margin: 1px;
   font-weight: bolder;
   font-size: 14px;
 }
 .colorselector:hover {
   color: #d59d24;
-  background-color: black;
+}
+
+.modal {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal_content {
+  width: 50vw;
+  background-color: #c7c29b;
+  border-radius: 4px;
+  box-shadow: 3px 3px 12px #3c2800;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.show .modal_content {
+  transform: translateY(0);
+}
+
+.modal_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.moda_close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal_body {
+  padding: 10px;
+  border-top: 2px solid #3c2800;
+  padding-bottom: 50px;
 }
 
 body {

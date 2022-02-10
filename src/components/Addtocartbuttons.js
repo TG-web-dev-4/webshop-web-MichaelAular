@@ -7,8 +7,8 @@ export default function AddButtons() {
 
   return (
     <>
-      <button className="AddtocartButtons" onClick={() => dispatch(increment())} >+</button>
-      <button className="AddtocartButtons" onClick={() => dispatch(decrement())} >-</button>
+      <button className="squaredButton" onClick={() => dispatch(increment())} >+</button>
+      <button className="squaredButton" onClick={() => dispatch(decrement())} >-</button>
     </>
   );
 };

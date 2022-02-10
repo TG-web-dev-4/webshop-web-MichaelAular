@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import React, { useState } from "react";
+import Cart_Modal from "./Modal";
 
 let shoppingbagCounter = ""
 
@@ -12,7 +14,11 @@ export default function NavBar() {
 
   displayedCounter()
 
+  const [show, setShow] = useState(false)
+
 return (
+  <>
+  <Cart_Modal title="Shoppingbag" onClose={() => setShow(false)} show={show}/>
   <div className="navbar">
     <div className="nav_links">
       <Link to="/man">Man</Link>
@@ -29,12 +35,13 @@ return (
       <Link to="/" className="fas fa-home" />
       <link className="fas fa-search" />
       <link className="fas fa-user" />
-      <link className="fas fa-shopping-bag" />
+      <link className="fas fa-shopping-bag" onClick={() => setShow(true)} />
       <div className="nav_shoppingbagcounter">
           {shoppingbagCounter}
         </div>
     </div>
 
   </div>
+  </>
 );
 }

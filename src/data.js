@@ -7,7 +7,7 @@ const product=[
         imgName: '001.jpg',
         size: "38, 39, 40, 41, 42, 43, 44",
         title: "Brand New Brownnosers have finaly arived!",
-        info: "With our cool new Brownnosers you'll be the king of the castle. The sand Castle that is! Consider yourself the sexiest man on the beach with this ultimate Sandal-Sock-Combo. The materials we used for this beautifull set is a combination of pure synthetic cotton for the socks combined with a leatherlook sandal. The sandals come with a plastic footbed to provide you a firm grip during your watersport pleasure. Just remember it's Summertime, and the livin' is easy. Fish are jumpin' and the cotton is high. Oh, your daddy's rich and your ma is good lookin'. So hush, little baby, baby don't you cry"
+        info: "With our cool new Brownnosers you'll be the king of the castle. The sand Castle that is! Consider yourself the sexiest man on the beach with this ultimate Sandal-Sock-Combo. The materials we used for this beautifull set is a combination of pure synthetic cotton for the socks combined with a leatherlook sandal. The sandals come with a plastic footbed to provide you a firm grip during your watersport pleasure. Just remember it's Summertime, and the livin' is easy. Fish are jumpin' and the cotton is high. Oh, your daddy's rich and your ma is good lookin'. So hush, little baby, baby don't you cry."
     },
     {
         id: 1,
