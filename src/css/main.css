@@ -162,9 +162,15 @@ span {
   font-size: 40px;
   text-align: center;
   margin-top: 15vh;
-  padding-top: 80px;
+  padding-top: 30px;
   line-height: 0.1;
   left: -20px;
+}
+
+.oops_icon {
+  position: relative;
+  height: 50px;
+  top: -25px;
 }
 
 .productpage {
