@@ -18,7 +18,7 @@ export default function NavBar() {
 
 return (
   <>
-  <Cart_Modal title="Shoppingbag" onClose={() => setShow(false)} show={show}/>
+  <Cart_Modal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show}/>
   <div className="navbar">
     <div className="nav_links">
       <Link to="/man">Man</Link>

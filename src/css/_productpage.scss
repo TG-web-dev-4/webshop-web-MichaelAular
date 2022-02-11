@@ -29,6 +29,13 @@
     display: flex;
     flex-direction: row;
     height: 40px;
-    width: 406px;
-    left: -2px;
+    width: 400px;
 }
+
+.productpage_price {
+    // font-weight: bold;
+    color: $darkbrown;
+    font-size: 50px;
+    margin-right: 10px;
+}
+

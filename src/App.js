@@ -12,7 +12,6 @@ import "./css/main.css";
 
 function App() {
   const counter = useSelector(state => state.counterReducer);
-  console.log(counter)
 
   return (
     <>

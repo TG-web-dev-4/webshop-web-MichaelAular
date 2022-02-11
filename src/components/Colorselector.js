@@ -1,10 +1,9 @@
-const Colorselector = () => {
+const Colorselector = ({selectionArray}) => {
 
+    const optionsToDisplay = selectionArray.map((item => <option key={item} value={item}>{item}</option>))
     return (
         <select className="colorselector">
-            <option value="brown">brown</option>
-            <option value="beige">beige</option>
-            <option value="beige">black</option>
+            {optionsToDisplay}
         </select>
     )
 }

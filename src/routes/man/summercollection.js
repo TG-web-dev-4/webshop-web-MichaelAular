@@ -1,5 +1,5 @@
 import Addbuttons from "../../components/Addtocartbuttons";
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import Sizeselector from "../../components/Sizeselector";
 import Colorselector from "../../components/Colorselector";
@@ -9,29 +9,27 @@ export default function Summercollection() {
     document.title = "Patro Afero | NEW Summer Collection";
   }, []);
 
-  const id=0
-  const products = useSelector(state => state.productReducer);
-
-  const item = products.find((product) => product.id === id)
-  console.log(item.imgName)
-
+  const id = 0;
+  const products = useSelector((state) => state.productReducer);
+  const item = products.find((product) => product.id === id);
 
   return (
     <div className="productpage">
-
       <div className="productpage_text">
         <h2>{item.title}</h2>
         <h3>{item.info}</h3>
         <div className="productpage_button_container">
-        <Colorselector/>
-        <Sizeselector/>
-        <Addbuttons/>
+          <div className="productpage_price">€{item.price}</div>
+          <Colorselector selectionArray={item.colors} />
+          <Sizeselector selectionArray={item.size}/>
+          <Addbuttons />
         </div>
       </div>
 
-        <img className="productpage_pic" src={require(`../../images/photo/${item.imgName}`)} />
-        {/* <div className="productpage_lyric">{item.lyric}</div> */}
-
+      <img
+        className="productpage_pic"
+        src={require(`../../images/photo/${item.imgName}`)}
+      />
     </div>
   );
 }
