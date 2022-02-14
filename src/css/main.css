@@ -87,8 +87,12 @@ nav_name {
   padding-bottom: -140px;
 }
 
-span {
+.colored_txt {
   color: #3c2800;
+}
+
+.shadow_txt {
+  text-shadow: 1px 1px 2px #3c2800;
 }
 
 .home_summeradd_container {
@@ -309,13 +313,27 @@ span {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 90%;
-  height: 70vh;
+  line-height: 0;
+  margin-left: -20px;
+}
+
+.overview_img_container {
+  width: 33.33vw;
+  height: 25vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
 }
 
 .overview_img {
-  width: 30vw;
-  height: 30vh;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: sepia(90%);
+}
+.overview_img:hover {
+  filter: none;
 }
 
 body {

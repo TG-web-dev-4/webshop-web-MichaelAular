@@ -1,15 +1,22 @@
-import Addbuttons from "../components/Addtocartbuttons";
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
+import {ProductOverviewImg} from "../components/ProductOverviewImg"
 
-export default function Woman() {
-    useEffect(() => {
-        document.title = "Patro Afero | Woman";
-      }, []);
+import product from "../data";
 
-    return (
-        <>
-        <h2>Woman</h2>
-        <Addbuttons />
-        </>
-    );
-  }
+export default function Man() {
+  useEffect(() => {
+    document.title = "Patro Afero | Man";
+  }, []);
+
+  const mappedProductCards = product.map((product) => {
+    if (product.gender === 'woman' || product.gender === 'unisex')  {
+      return  <ProductOverviewImg key={product.id} imgName={product.imgName} pageNumber={product.id} />;
+    }
+  });
+
+  return (
+    <div className="overview">
+     {mappedProductCards}
+    </div>
+  );
+}

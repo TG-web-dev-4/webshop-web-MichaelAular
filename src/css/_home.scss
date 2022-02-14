@@ -24,8 +24,12 @@
     padding-bottom: -140px;
 }
 
-span {
+.colored_txt {
     color: $darkbrown
+}
+
+.shadow_txt {
+    text-shadow: 1px 1px 2px $darkbrown;
 }
 
 .home_summeradd_container {
