@@ -327,7 +327,6 @@ nav_name {
 
 .overview_img {
   width: 100%;
-  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
   filter: sepia(90%);
