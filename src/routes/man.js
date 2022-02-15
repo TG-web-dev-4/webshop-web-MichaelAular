@@ -10,7 +10,7 @@ export default function Man() {
 
   const mappedProductCards = product.map((product) => {
     if (product.gender === 'man' || product.gender === 'unisex')  {
-      return  <ProductOverviewImg key={product.id} imgName={product.imgName} pageNumber={product.id} />;
+      return  <ProductOverviewImg key={product.id} imgName={product.imgName} pageNumber={product.id} productName={product.name} />;
     }
   });
 

@@ -5,9 +5,11 @@ export const ProductOverviewImg = ({
     pageNumber,
     className = "overview_img",
     containerClass = "overview_img_container",
+    productName
   }) => {
     return (
       <div className={containerClass}>
+        <div className="productname">{productName}</div>
         <Link to={`../productpage/${pageNumber}`}>
           <img
             className={className}

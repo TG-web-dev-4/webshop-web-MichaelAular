@@ -333,6 +333,18 @@ nav_name {
 }
 .overview_img:hover {
   filter: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.productname {
+  position: relative;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 3em;
+  text-shadow: 1px 1px rgba(199, 194, 155, 0.5);
+  opacity: 0.9;
 }
 
 body {

@@ -19,5 +19,17 @@
     filter: sepia(90%);
     &:hover {
         filter: none;
+        transition: all 0.2s ease-in-out;
     }
+}
+
+.productname {
+    position: relative;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: $black;
+    font-size: 3em;
+    text-shadow: 1px 1px $offwhite50;
+    opacity: 0.9;
 }
