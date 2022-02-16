@@ -159,6 +159,21 @@ nav_name {
   color: #d59d24;
 }
 
+.addButton {
+  background-color: #956503;
+  color: #c7c29b;
+  border: none;
+  height: 25px;
+  width: 100px;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.addButton:hover {
+  color: #d59d24;
+}
+
 .oops {
   position: relative;
   height: 250px;
@@ -230,7 +245,7 @@ nav_name {
   background-color: #3c2800;
   color: #c7c29b;
   height: 25px;
-  width: 120px;
+  width: 60px;
   border-radius: 2px;
   border: none;
   margin: 1px;
@@ -246,7 +261,7 @@ nav_name {
   background-color: #3c2800;
   color: #c7c29b;
   height: 25px;
-  width: 180px;
+  width: 160px;
   border-radius: 2px;
   border: none;
   margin: 1px;
@@ -342,10 +357,9 @@ nav_name {
 .productname {
   position: relative;
   top: 90%;
-  width: 100%;
-  text-align: center;
+  left: 10%;
   color: black;
-  font-size: 2.2em;
+  font-size: 1em;
   font-weight: bold;
   text-shadow: 1px 1px rgba(199, 194, 155, 0.5);
   opacity: 0.9;

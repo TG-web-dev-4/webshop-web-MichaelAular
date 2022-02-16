@@ -2,7 +2,7 @@ import * as actionTypes from '../actions/actiontypes'
 import { product } from '../data'
 
 const INITIAL_STATE = {
-    products: [], // {id, title, price}
+    products: [...product], // {id, title, price}
     cart: [], // {id, title, price, qty}
     currentItem: null,
 }
@@ -11,11 +11,16 @@ const INITIAL_STATE = {
 const shopReducer = ( state = INITIAL_STATE, action ) => {
     switch(action.type) {
         case actionTypes.ADD_TO_CART:
-        const {id} = action.payload
+        const {id, size, color} = action.payload
+        console.log(`ID: ${id} size: ${size} color: ${color}`)
+        console.log('STATE PRODUCTS',state.products)
+        const foundItem = state.products.filter(item => Number(item.id) === Number(id) )
+       
+        const itemToAddToCart = {...foundItem, colors: color, size: size}
+        console.log('ITEM TO ADD to CART', itemToAddToCart)
 
-        const itemToAddToCart = product.find(item => Number(item.id) === id )
             return   {
-            ...state, cart: [...state.cart, itemToAddToCart]
+            ...state, cart: [...state.cart, itemToAddToCart ]
 
         };
         case actionTypes.REMOVE_FROM_CART:

@@ -88,11 +88,11 @@ export const product = [
     name: "The Brown Study",
     pagetitle: "Patro Afero | The Brown Study",
     gender: "man",
-    colors: ["moonrock brown", "", "meteorite grey"],
+    colors: ["moonrock brown", "saturn brown ", "meteorite brown"],
     price: 299,
     imgName: "007.jpg",
     size: [ 42 ],
-    title: "The Brown Study puts all academic to shame and it's here for you!",
+    title: "The Brown Study puts all those socalled academic to shame.",
     info: "When you are having questions of science, science and progress, then you are probably just as much of a scientists as we are. Though you don't have to be a rocketscientist to understand the following. The Brown Study is for those who want to send out a message. Are you a accademic and want to show? Than the Brown Study is the way to go. Remember when we did the moonshot? And Pony Trekker led the way? We'd move to the Canaveral moonstop. Everynaut would dance and sway. We got music in our solar system We're space truckin' round the star. Sometimes the answer lies in the size.",
   },
   {
