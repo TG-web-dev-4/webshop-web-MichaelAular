@@ -5,15 +5,13 @@ import { useParams } from "react-router-dom";
 import Sizeselector from "../components/Sizeselector";
 import Colorselector from "../components/Colorselector";
 
-
-
-export default function Productpage() {
-
+const Productpage = () => {
   const params = useParams()
   const id = params.id
-
   const products = useSelector((state) => state.productReducer);
   const item = products.find((product) => product.id === id);
+
+  console.log(item)
 
   useEffect(() => {
     document.title = item.pagetitle;
@@ -41,3 +39,11 @@ export default function Productpage() {
     </div>
   );
 }
+
+const mapStateToProps = state => {
+  return {
+    products: state.shop.products,
+  }
+}
+
+export default Productpage;

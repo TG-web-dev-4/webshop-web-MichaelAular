@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
 import Navbar from "./components/Navbar";
 import Home from "./routes/home";
 import Man from "./routes/man";

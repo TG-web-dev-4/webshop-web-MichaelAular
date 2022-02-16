@@ -123,7 +123,7 @@ export const product = [
   {
     id: "10",
     name: "Losers",
-    pagetitle: "Patro Afero | ",
+    pagetitle: "Patro Afero | Losers",
     gender: "woman",
     colors: ["dragon-scale", "snake-scale", "lizzard-scale"],
     price: 379,
@@ -135,7 +135,7 @@ export const product = [
   {
     id: "11",
     name: "Florida Woman",
-    pagetitle: "Patro Afero | ",
+    pagetitle: "Patro Afero | Florida Woman",
     gender: "woman",
     colors: ["black and orange", "brown and orange"],
     price: 286,
