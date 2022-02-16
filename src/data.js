@@ -13,7 +13,7 @@ export const product = [
   },
   {
     id: "2",
-    name: "Brownnosers",
+    name: "BrownNosers",
     gender: "man",
     pagetitle: "Patro Afero | Brownnosers",
     colors: ["light-brown", "brown", "slightly-darker-brown", "dark-brown"],
@@ -43,7 +43,7 @@ export const product = [
   },
   {
     id: "4",
-    name: "The quick brown fox",
+    name: "The Quick Brown Fox",
     gender: "man",
     pagetitle: "Patro Afero | The Quick Brown Fox",
     colors: ["white", "grey", "silver", "offwhite"],

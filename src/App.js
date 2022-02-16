@@ -12,11 +12,10 @@ import "./css/main.css";
 import ScrollToTop from "./actions/scrolltotop";
 
 function App() {
-  const counter = useSelector(state => state.counterReducer);
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />

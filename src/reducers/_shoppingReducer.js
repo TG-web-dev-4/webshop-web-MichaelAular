@@ -1,8 +1,8 @@
-const counterReducer = (state = 0, action) => {
+const cartReducer = (state = 0, action) => {
     switch(action.type){
-        case 'INCREMENT':
+        case 'ADDSHOPPINGGBAG':
             return state +1;
-        case 'DECREMENT':
+        case 'REMOVESHOPPINGGBAG':
             if (state <= 0) state = 0;
             else return state -1;
         default:
@@ -10,4 +10,4 @@ const counterReducer = (state = 0, action) => {
     }
 }
 
-export default counterReducer;
+export default cartReducer;

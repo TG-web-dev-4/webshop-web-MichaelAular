@@ -297,16 +297,19 @@ nav_name {
   justify-content: space-around;
 }
 
-.moda_close_button {
+.modal_close_button {
   position: absolute;
   right: 10px;
   top: 10px;
 }
 
 .modal_body {
+  font-family: mainFont;
   padding: 10px;
   border-top: 2px solid #3c2800;
   padding-bottom: 50px;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 .overview {
@@ -342,7 +345,8 @@ nav_name {
   width: 100%;
   text-align: center;
   color: black;
-  font-size: 3em;
+  font-size: 2.2em;
+  font-weight: bold;
   text-shadow: 1px 1px rgba(199, 194, 155, 0.5);
   opacity: 0.9;
 }
@@ -356,4 +360,18 @@ body {
   padding-right: 10px;
   width: 100vw;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(60, 40, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: inset -1px -1px 5px black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3c2800;
 }/*# sourceMappingURL=main.css.map */

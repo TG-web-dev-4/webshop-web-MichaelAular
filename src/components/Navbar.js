@@ -6,7 +6,8 @@ import Cart_Modal from "./Modal";
 let shoppingbagCounter = ""
 
 export default function NavBar() {
-  const counter = useSelector(state => state.counterReducer);
+  const counter = useSelector(state => state.cartReducer);
+
   const displayedCounter = () => {
     if (counter <= 0) shoppingbagCounter = 0;
     if (counter > 0) shoppingbagCounter = counter;
@@ -18,7 +19,7 @@ export default function NavBar() {
 
 return (
   <>
-  <Cart_Modal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show}/>
+  <Cart_Modal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show} count={shoppingbagCounter}/>
   <div className="navbar">
     <div className="nav_links">
       <Link to="/man">Man</Link>

@@ -1,4 +1,4 @@
-import { increment, decrement } from "../actions";
+import { addShoppingBag, removeShoppingBag } from "../actions";
 import { useDispatch } from "react-redux";
 
 
@@ -7,8 +7,8 @@ export default function AddButtons() {
 
   return (
     <>
-      <button className="squaredButton" onClick={() => dispatch(increment())} >+</button>
-      <button className="squaredButton" onClick={() => dispatch(decrement())} >-</button>
+      <button className="squaredButton" onClick={() => dispatch(addShoppingBag())} >+</button>
+      <button className="squaredButton" onClick={() => dispatch(removeShoppingBag())} >-</button>
     </>
   );
 };

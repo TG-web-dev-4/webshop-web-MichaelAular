@@ -17,3 +17,17 @@ export const displayItem = (id) => {
         payload: id
     }
 }
+
+export const addShoppingBag = (id) => {
+    return {
+        type: "ADDSHOPPINGGBAG",
+        payload: id
+    }
+}
+
+export const removeShoppingBag = (id) => {
+    return {
+        type: "REMOVESHOPPINGGBAG",
+        payload: id
+    }
+}

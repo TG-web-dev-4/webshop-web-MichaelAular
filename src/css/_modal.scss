@@ -32,24 +32,23 @@
   transform: translateY(0);
 }
 
-// .modal_title {
-//   margin: 0;
-// }
-
 .modal_header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.moda_close_button {
+.modal_close_button {
   position: absolute;
   right: 10px;
   top: 10px;
 }
 
 .modal_body {
+  font-family: mainFont;
   padding: 10px;
   border-top: 2px solid $darkbrown;
   padding-bottom: 50px;
+  font-size: 1em;
+  font-weight: 600;
 }
