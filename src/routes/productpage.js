@@ -1,4 +1,4 @@
-import Addbuttons from "../components/Addtocartbuttons";
+import Addbuttons from "../components/Addtocartbutton";
 import React, { useEffect, useState} from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
@@ -10,10 +10,13 @@ const Productpage = () => {
   const id = params.id
   const products = useSelector((state) => state.productReducer);
   const item = products.find((product) => product.id === id);
-  
-  const [itemToAdd, setItemToAdd] = useState({id: id, size: '', color: ''})
+  const [itemToAdd, setItemToAdd] = useState({
+    id: id,
+    size: Number(item.size[0]),
+    color: item.colors[0],
+    productname: item.name,
+  })
 
-  console.log("item in basket: ",itemToAdd)
   useEffect(() => {
     document.title = item.pagetitle;
   }, []);
@@ -26,7 +29,6 @@ const Productpage = () => {
         <h3>{item.info}</h3>
         <div className="productpage_button_container">
           <div className="productpage_price">€{item.price}</div>
-       
           <Colorselector itemToAdd={itemToAdd} setItemToAdd={setItemToAdd} selectionArray={item.colors} />
           <Sizeselector itemToAdd={itemToAdd} setItemToAdd={setItemToAdd} selectionArray={item.size}/>
           <Addbuttons item={itemToAdd} />

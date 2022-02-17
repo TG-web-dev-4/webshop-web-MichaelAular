@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import React, { useState } from "react";
-import Cart_Modal from "./Modal";
-
-
+import CartModal from "./CartModal";
 
 export default function NavBar() {
   const counter = useSelector(state => state.shopReducer);
@@ -20,7 +18,7 @@ export default function NavBar() {
 
 return (
   <>
-  <Cart_Modal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show} count={shoppingbagCounter}/>
+  <CartModal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show} count={shoppingbagCounter}/>
   <div className="navbar">
     <div className="nav_links">
       <Link to="/man">Man</Link>

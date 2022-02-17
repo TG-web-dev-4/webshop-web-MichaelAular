@@ -1,4 +1,4 @@
-const Modal = (props) => {
+const CartModal = (props) => {
   return (
     <div
       className={`modal ${props.show ? "show" : ""}`}
@@ -20,4 +20,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default CartModal;
