@@ -3,8 +3,6 @@ import { useSelector } from "react-redux";
 import React, { useState } from "react";
 import Cart_Modal from "./Modal";
 
-
-
 export default function NavBar() {
   const counter = useSelector(state => state.shopReducer);
   let shoppingbagCounter = counter.cart.length
