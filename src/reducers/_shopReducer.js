@@ -10,16 +10,35 @@ const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
       const { id, size, color } = action.payload;
-      const foundItem = state.products.filter(
+      if (!size || !color) return state;
+
+      const foundItem = state.products.find(
         (item) => Number(item.id) === Number(id)
       );
-      const itemToAddToCart = { ...foundItem, colors: color, size: size };
+      const cartItem = {
+        id,
+        productName: foundItem.name,
+        color: color,
+        size: size,
+        price: foundItem.price,
+        qty: 1,
+      };
+
       return {
         ...state,
-        cart: [...state.cart, itemToAddToCart],
+        cart: [...state.cart, cartItem],
       };
     case actionTypes.REMOVE_FROM_CART:
-      return {};
+      const productId = 1;
+      const filteredCart = state.cart.filter(
+        (product) => product.id === productId
+      );
+
+      return {
+        ...state,
+        cart: [...filteredCart],
+      };
+
     case actionTypes.ADJUST_QTY:
       return {};
     case actionTypes.LOAD_CURRENT_ITEM:
