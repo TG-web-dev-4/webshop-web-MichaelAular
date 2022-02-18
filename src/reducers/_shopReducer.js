@@ -2,16 +2,15 @@ import * as actionTypes from "../actions/actiontypes";
 import { product } from "../data";
 
 const INITIAL_STATE = {
-  products: [...product], // {id, title, price}
-  cart: [], // {id, title, price, qty}
+  products: [...product],
+  cart: [],
 };
 
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
-      const { id, size, color } = action.payload;
+      const { id, name, size, color } = action.payload;
       if (!size || !color) return state;
-
       const foundItem = state.products.find(
         (item) => Number(item.id) === Number(id)
       );
@@ -21,9 +20,10 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         color: color,
         size: size,
         price: foundItem.price,
+        name: foundItem.name,
+        img: foundItem.imgName,
         qty: 1,
       };
-
       return {
         ...state,
         cart: [...state.cart, cartItem],
@@ -33,12 +33,10 @@ const shopReducer = (state = INITIAL_STATE, action) => {
       const filteredCart = state.cart.filter(
         (product) => product.id === productId
       );
-
       return {
         ...state,
         cart: [...filteredCart],
       };
-
     case actionTypes.ADJUST_QTY:
       return {};
     case actionTypes.LOAD_CURRENT_ITEM:

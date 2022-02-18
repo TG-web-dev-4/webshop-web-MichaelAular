@@ -11,8 +11,8 @@ const Productpage = () => {
   const item = products.find((product) => Number(product.id) === Number(id));
   const [itemToAdd, setItemToAdd] = useState({
     id: id,
-    size: 'size',
-    color: 'color',
+    size: undefined,
+    color: undefined,
   });
 
   useEffect(() => {

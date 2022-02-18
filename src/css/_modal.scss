@@ -15,12 +15,15 @@
 }
 
 .modal_content {
-  width: 50vw;
+  min-width: 500px;
   background-color: $offwhite;
   border-radius: 4px;
   box-shadow: 3px 3px 12px $darkbrown;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
+  overflow-y: initial;
+  height: 80vh;
+  overflow-y: auto;
 }
 
 .modal.show {
@@ -36,6 +39,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .modal_close_button {
@@ -51,4 +55,52 @@
   padding-bottom: 50px;
   font-size: 1em;
   font-weight: 600;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.cartitem_name {
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 0;
+  margin-top: 30px;
+}
+
+.cartitem_info {
+  position: relative;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  color: $darkbrown;
+  position: relative;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 0;
+  width: 440px;
+  padding-left: 10px;
+  border-bottom: 2px solid $darkbrown;
+}
+
+.info_text {
+  width: 200px;
+}
+.info_img {
+  position: relative;
+  top: -25px;
+  height: 90px;
+  width: 250px;
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px $darkbrown;
+  filter: sepia(100%);
+  &:hover {
+    filter: sepia(50%);;
+  }
+}
+.cartitem_img {
+  width: 100%;
+  top:100%;
+  transform: translateY(-70%);
 }

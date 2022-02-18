@@ -6,7 +6,6 @@ import CartModal from "./CartModal";
 export default function NavBar() {
   const counter = useSelector(state => state.shopReducer);
   let shoppingbagCounter = counter.cart.length
-
   const displayedCounter = () => {
     if (counter <= 0) shoppingbagCounter = 0;
     if (counter > 0) shoppingbagCounter = counter;
