@@ -1,28 +1,34 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { removeFromCart } from "../actions";
+import { useDispatch } from "react-redux";
+import { v4 as uuid } from "uuid";
 
 const CartModal = (props) => {
   const cart = useSelector((state) => state.shopReducer.cart);
-  console.log(cart);
+  const dispatch = useDispatch();
 
   const itemInCart = cart.map((item) => (
-    <div key={item + Math.random()} value={item}>
+    <div key={uuid()} value={item}>
       <div className="cartitem_name">{item.name}</div>
       <div className="cartitem_info">
         <div className="info_text">
           <p>color: {item.color}</p>
           <p>size: {item.size}</p>
           <p>price: €{item.price}</p>
+          <p>quantity: 1</p>
+          <button
+            className="fas fa-trash"
+            onClick={() => dispatch(removeFromCart(item.unique_id))}
+          />
         </div>
-
         <div className="info_img">
           <Link to={`../productpage/${item.id}`}>
-          <img
-            className="cartitem_img"
-            src={require(`../images/photo/${item.img}`)}
-          />
+            <img
+              className="cartitem_img"
+              src={require(`../images/photo/${item.img}`)}
+            />
           </Link>
-          
         </div>
       </div>
     </div>

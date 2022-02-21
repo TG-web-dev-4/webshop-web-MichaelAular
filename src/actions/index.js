@@ -15,11 +15,11 @@ export const addToCart = (item) => {
     }
 }
 
-export const removeFromCart = (itemID) => {
+export const removeFromCart = (item) => {
     return {
         type: actionTypes.REMOVE_FROM_CART,
         payload: {
-            id: itemID
+            id: item
         }
     }
 }
@@ -31,12 +31,5 @@ export const adjustQty = (itemID, value) => {
             id: itemID,
             qty: value
         }
-    }
-}
-
-export const loadCurrentItem = (item) => {
-    return {
-        type: actionTypes.LOAD_CURRENT_ITEM,
-        payload: item
     }
 }

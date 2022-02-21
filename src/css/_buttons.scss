@@ -44,3 +44,17 @@
         color: $midbrown;
     }
 }
+
+.fa-trash {
+    position: relative;
+    z-index: 500;;
+    left: 410px;
+    top: -30px;
+    border: none;
+    background: none;
+    color: $darkbrown;
+    font-size: 18px;
+    &:hover {
+        color: $brown;
+    }
+}

@@ -174,6 +174,20 @@ nav_name {
   color: #d59d24;
 }
 
+.fa-trash {
+  position: relative;
+  z-index: 500;
+  left: 410px;
+  top: -30px;
+  border: none;
+  background: none;
+  color: #3c2800;
+  font-size: 18px;
+}
+.fa-trash:hover {
+  color: #956503;
+}
+
 .oops {
   position: relative;
   height: 250px;
@@ -313,7 +327,7 @@ nav_name {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px;
+  font-size: 1.7em;
 }
 
 .modal_close_button {
@@ -327,16 +341,14 @@ nav_name {
   padding: 10px;
   border-top: 2px solid #3c2800;
   padding-bottom: 50px;
-  font-size: 1em;
-  font-weight: 600;
   margin-left: 5%;
   margin-right: 5%;
+  font-weight: 600;
 }
 
 .cartitem_name {
   position: relative;
   font-size: 1.2em;
-  font-weight: 600;
   line-height: 0;
   margin-top: 30px;
 }
@@ -349,9 +361,8 @@ nav_name {
   color: #3c2800;
   position: relative;
   font-size: 1em;
-  font-weight: 600;
   line-height: 0;
-  width: 440px;
+  width: 430px;
   padding-left: 10px;
   border-bottom: 2px solid #3c2800;
 }
@@ -436,7 +447,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: rgba(60, 40, 0, 0.7);
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: inset -1px -1px 5px black;
 }
 
