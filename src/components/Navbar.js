@@ -4,8 +4,17 @@ import React, { useState } from "react";
 import CartModal from "./CartModal";
 
 export default function NavBar() {
-  const counter = useSelector(state => state.shopReducer);
-  let shoppingbagCounter = counter.cart.length
+ const counter = useSelector(state => state.shopReducer);
+ const cart = useSelector((state) => state.shopReducer.cart);
+ const shoppingbagCounter = (cart) => {
+    let totalAmount = 0;
+    cart.forEach((cartItem) => {
+      totalAmount += cartItem.qty
+    })
+    return totalAmount;
+  }
+
+  console.log(counter.cart)
 
   const displayedCounter = () => {
     if (counter <= 0) shoppingbagCounter = 0;
@@ -36,7 +45,7 @@ return (
       <link className="fas fa-user" />
       <link className="fas fa-shopping-bag" onClick={() => setShow(true)} />
       <div className="nav_shoppingbagcounter">
-          {shoppingbagCounter}
+          {shoppingbagCounter(cart)}
         </div>
     </div>
 
