@@ -48,13 +48,35 @@
 .fa-trash {
     position: relative;
     z-index: 500;;
-    left: 410px;
-    top: -30px;
+    left: 395px;
+    top: -50px;
     border: none;
     background: none;
     color: $darkbrown;
     font-size: 18px;
+    height: 45px;
+    width: 45px;;
     &:hover {
         color: $brown;
+        background-color: $offwhite50;
+        border-radius: 50%;
+    }
+}
+
+.OrderButton {
+    position: relative;
+    background-color: $brown;
+    color: $offwhite;
+    border: none;
+    height: 25px;
+    width: 242px;
+    border-radius: 2px;
+    margin: 1px;
+    font-weight: bolder;
+    font-size: 14px;
+    right: -100px;
+    bottom: 5px;
+    &:hover {
+        color: $midbrown;
     }
 }

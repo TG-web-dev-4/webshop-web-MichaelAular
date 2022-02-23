@@ -177,15 +177,37 @@ nav_name {
 .fa-trash {
   position: relative;
   z-index: 500;
-  left: 410px;
-  top: -30px;
+  left: 395px;
+  top: -50px;
   border: none;
   background: none;
   color: #3c2800;
   font-size: 18px;
+  height: 45px;
+  width: 45px;
 }
 .fa-trash:hover {
   color: #956503;
+  background-color: rgba(199, 194, 155, 0.5);
+  border-radius: 50%;
+}
+
+.OrderButton {
+  position: relative;
+  background-color: #956503;
+  color: #c7c29b;
+  border: none;
+  height: 25px;
+  width: 242px;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bolder;
+  font-size: 14px;
+  right: -100px;
+  bottom: 5px;
+}
+.OrderButton:hover {
+  color: #d59d24;
 }
 
 .oops {
@@ -310,7 +332,7 @@ nav_name {
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
   overflow-y: initial;
-  height: 80vh;
+  max-height: 80vh;
   overflow-y: auto;
 }
 
@@ -374,7 +396,7 @@ nav_name {
 .info_img {
   position: relative;
   top: -25px;
-  height: 90px;
+  height: 115px;
   width: 250px;
   margin-top: 14px;
   overflow: hidden;
@@ -389,7 +411,21 @@ nav_name {
 .cartitem_img {
   width: 100%;
   top: 100%;
-  transform: translateY(-70%);
+  transform: translateY(-65%);
+}
+
+.total_checkout {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-left: 25px;
+}
+
+.empty {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-left: 25px;
+  left: -35px;
 }
 
 .overview {

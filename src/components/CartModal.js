@@ -15,8 +15,8 @@ const CartModal = (props) => {
         <div className="info_text">
           <p>color: {item.color}</p>
           <p>size: {item.size}</p>
+          <p>quantity: {item.qty}</p>
           <p>price: €{item.price}</p>
-          <p>quantity: 1</p>
           <button
             className="fas fa-trash"
             onClick={() => dispatch(removeFromCart(item.unique_id))}
@@ -34,6 +34,14 @@ const CartModal = (props) => {
     </div>
   ));
 
+  const calcTotalPrice = (cart) => {
+    let totalAmount = 0;
+    cart.forEach((cartItem) => {
+      totalAmount += cartItem.price
+    })
+    return totalAmount;
+  }
+
   return (
     <div
       className={`modal ${props.show ? "show" : ""}`}
@@ -49,7 +57,14 @@ const CartModal = (props) => {
             X
           </button>
         </div>
-        <div className="modal_body">{itemInCart}</div>
+        <div className="modal_body">
+          {itemInCart}
+          {itemInCart.length === 0 && <div className="empty">Bag is Empty</div>}
+          </div>
+        <div className="total_checkout">
+          Total: €{calcTotalPrice(cart)}
+          <button className="OrderButton">PLACE ORDER</button>
+        </div>
       </div>
     </div>
   );

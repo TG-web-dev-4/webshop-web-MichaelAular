@@ -10,7 +10,7 @@ const INITIAL_STATE = {
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
-      const { id, name, size, color } = action.payload;
+      const { id, size, color } = action.payload;
       if (!size || !color) return state;
       const foundItem = state.products.find(
         (item) => Number(item.id) === Number(id)
@@ -27,6 +27,24 @@ const shopReducer = (state = INITIAL_STATE, action) => {
         qty: 1,
       };
 
+      const cartItems = state.cart
+      const existingCartItem = cartItems.find((x) => x.id === cartItem.id && x.size === cartItem.size)
+
+      console.log('EXIST: ',existingCartItem)
+      console.log('CART ITEM QTY: ', cartItem.qty)
+
+      if (existingCartItem) {
+
+          const updatedCart = cartItems.map((x) =>
+          x.id === cartItem.id ? {...existingCartItem, qty: existingCartItem.qty + 1} : x
+          )
+
+
+          return {
+            ...state,
+            cart: [...updatedCart ]
+          }
+      }
       return {
         ...state,
         cart: [...state.cart, cartItem],
