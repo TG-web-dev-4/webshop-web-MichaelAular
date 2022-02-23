@@ -28,21 +28,15 @@ const shopReducer = (state = INITIAL_STATE, action) => {
       };
 
       const cartItems = state.cart
-      const existingCartItem = cartItems.find((x) => x.id === cartItem.id && x.size === cartItem.size)
-
-      console.log('EXIST: ',existingCartItem)
-      console.log('CART ITEM QTY: ', cartItem.qty)
+      const isItemInCart = (item) => item.id === cartItem.id && item.size === cartItem.size && item.color === cartItem.color
+      const existingCartItem = cartItems.find(isItemInCart)
 
       if (existingCartItem) {
-
-          const updatedCart = cartItems.map((x) =>
-          x.id === cartItem.id ? {...existingCartItem, qty: existingCartItem.qty + 1} : x
-          )
-
+          const updatedCart = cartItems.map((item) => isItemInCart(item) ? {...existingCartItem, qty: existingCartItem.qty + 1} : item)
 
           return {
             ...state,
-            cart: [...updatedCart ]
+            cart: updatedCart
           }
       }
       return {

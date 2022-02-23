@@ -16,7 +16,7 @@ const CartModal = (props) => {
           <p>color: {item.color}</p>
           <p>size: {item.size}</p>
           <p>quantity: {item.qty}</p>
-          <p>price: €{item.price}</p>
+          <p>price: €{item.qty*item.price}</p>
           <button
             className="fas fa-trash"
             onClick={() => dispatch(removeFromCart(item.unique_id))}

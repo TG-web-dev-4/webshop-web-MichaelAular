@@ -42,6 +42,10 @@
     font-size: 14px;
     &:hover {
         color: $midbrown;
+        &:active {
+            background-color: $midbrown;
+            color: $offwhite;
+        }
     }
 }
 

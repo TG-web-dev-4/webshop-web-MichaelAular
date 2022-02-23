@@ -173,6 +173,10 @@ nav_name {
 .addButton:hover {
   color: #d59d24;
 }
+.addButton:hover:active {
+  background-color: #d59d24;
+  color: #c7c29b;
+}
 
 .fa-trash {
   position: relative;
