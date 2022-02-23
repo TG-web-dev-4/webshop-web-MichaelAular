@@ -7,7 +7,6 @@ export const displayItem = (id) => {
     }
 }
 
-
 export const addToCart = (item) => {
     return {
         type: actionTypes.ADD_TO_CART,

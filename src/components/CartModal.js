@@ -37,7 +37,7 @@ const CartModal = (props) => {
   const calcTotalPrice = (cart) => {
     let totalAmount = 0;
     cart.forEach((cartItem) => {
-      totalAmount += cartItem.price
+      totalAmount += cartItem.price*cartItem.qty
     })
     return totalAmount;
   }
