@@ -15,7 +15,7 @@ function Dashboard() {
       setName(data.name);
     } catch (err) {
       console.error(err);
-      alert("An error occured while fetching user data");
+      // alert("An error occured while fetching user data");
     }
   };
   useEffect(() => {
@@ -29,10 +29,13 @@ function Dashboard() {
   return (
     <div className="dashboard">
        <div className="dashboard__container">
-        Logged in as {name}, {user?.email} 
+        {!user && <div>Not logged in</div>}
+        {user && <div>
+        Logged in as {user?.email}
         <button className="dashboard__btn" onClick={logout}>
           Logout
          </button>
+         </div>}
        </div>
      </div>
   );
