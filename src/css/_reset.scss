@@ -1,4 +1,4 @@
-.register {
+.reset {
     position: relative;
     height: 100%;
     width: 100%;
@@ -7,20 +7,20 @@
     justify-content: center;
     top: -40px;
   }
-  .register__container {
+  .reset__container {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: $pale;
-    padding: 65px;
+    padding: 30px;
     border-radius: 4px;
   }
-  .register__textBox {
+  .reset__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .register__btn {
+  .reset__btn {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
@@ -32,12 +32,6 @@
       color: $white;
     }
   }
-  .register__google {
-    background-color: $midbrown;
-    &:hover {
-      color: $white;
-    }
-  }
-  .register div {
+  .reset div {
     margin-top: 17px;
   }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { logInWithEmailAndPassword, signInWithGoogle } from "../firebase";
 
-const Login  = ({setShowRegister}) => {
+const Login  = ({setShowRegister, setShowReset}) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -36,12 +36,11 @@ const Login  = ({setShowRegister}) => {
               Login with Google
             </button>
             <div>
-              <Link to="/reset">Forgot Password</Link>
+              <button className="forgotPasswordButton" onClick={() => setShowReset(true)}>Forgot Password</button>{" "}
             </div>
             <div>
               Don't have an account?{" "}
-              <button onClick={() => setShowRegister(true)}>Register</button>{" "}
-              now.
+              <button className="registerButton" onClick={() => setShowRegister(true)}>Register now</button>{" "}
             </div>
           </div>
         </div>

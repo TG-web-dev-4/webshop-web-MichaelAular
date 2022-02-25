@@ -3,10 +3,13 @@ import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Login from "./Login";
 import Register from "./register";
+import Reset from "./Reset";
+// import Reset from "./ResetModal";
 
 const LoginModal = (props) => {
   const [user, loading] = useAuthState(auth);
   const [showRegister, setShowRegister] = useState(false);
+  const [showReset, setShowReset] = useState(false);
 
   useEffect(() => {
     if (loading) {
@@ -14,6 +17,9 @@ const LoginModal = (props) => {
       return;
     }
   }, [user, loading]);
+
+  let reset;
+  if (showReset) reset = <Reset setShowRegister={setShowRegister}/>
 
   return (
     <div
@@ -24,6 +30,9 @@ const LoginModal = (props) => {
         <div className="modal_header">
           {showRegister ? (
             <h3 className="modal_title">Register</h3>
+          ) :
+          showReset ? (
+            <h3 className="modal_title">Reset</h3>
           ) : (
             <h3 className="modal_title">Login</h3>
           )}
@@ -35,11 +44,12 @@ const LoginModal = (props) => {
           </button>
         </div>
         {showRegister ? (
-        <Register setShowRegister={setShowRegister}/>
+        <Register setShowRegister={setShowRegister} setShowReset={setShowReset} showReset={showReset} />
+        ) :
+        showReset ? (
+          reset
         ) : (
-          <>
-        <Login setShowRegister={setShowRegister}/>
-        </>
+        <Login setShowRegister={setShowRegister} setShowReset={setShowReset} />
         )}
 
       </div>

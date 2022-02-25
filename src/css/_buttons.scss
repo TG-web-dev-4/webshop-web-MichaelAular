@@ -19,6 +19,7 @@
 }
 
 .squaredButton {
+    cursor: pointer;
     background-color: $darkbrown;
     color: $offwhite;
     border: none;
@@ -34,6 +35,7 @@
 }
 
 .addButton {
+    cursor: pointer;
     background-color: $brown;
     color: $offwhite;
     border: none;
@@ -52,6 +54,7 @@
 }
 
 .fa-trash {
+    cursor: pointer;
     position: relative;
     z-index: 500;;
     left: 395px;
@@ -70,6 +73,7 @@
 }
 
 .OrderButton {
+    cursor: pointer;
     position: relative;
     background-color: $brown;
     color: $pale;
@@ -87,5 +91,31 @@
         &:active {
             color: $darkbrown;
         }
+    }
+}
+
+.forgotPasswordButton,
+.loginButton
+{
+    background-color: $darkbrown;
+    border: none;
+    border-radius: 5px;
+    color: $offwhite;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+        color: $white;
+    }
+}
+
+.registerButton {
+    background-color: $offwhite;
+    border: none;
+    border-radius: 5px;
+    color: $darkbrown;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+        color: $black;
     }
 }

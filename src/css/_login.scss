@@ -21,15 +21,22 @@
     margin-bottom: 10px;
   }
   .login__btn {
+    cursor: pointer;
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
     border: none;
     color: $offwhite;
     background-color: $darkbrown;
+    &:hover {
+      color: $white;
+    }
   }
   .login__google {
     background-color: $midbrown;
+    &:hover {
+      color: $white;
+    }
   }
   .login div {
     margin-top: 17px;

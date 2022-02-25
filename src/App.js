@@ -22,7 +22,6 @@ function App() {
         <Route path="woman" element={<Woman />} />
         <Route path="aboutus" element={<Aboutus />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="productpage/:id" element={<Productpage />} />
         <Route path="*" element={<Oops />}/>
       </Routes>
       </ScrollToTop>

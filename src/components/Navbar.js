@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import React, { useState } from "react";
 import CartModal from "./CartModal";
 import LoginModal from "./LoginModal";
+import Dashboard from "./Dashboard";
 
 export default function NavBar() {
  const counter = useSelector(state => state.shopReducer);
@@ -29,6 +30,7 @@ return (
   <CartModal title="Discrete Brown Shoppingbag" onClose={() => setShowCart(false)} showCart={showCart} count={shoppingbagCounter}/>
   <LoginModal onClose={() => setShowLogin(false)} showLogin={showLogin} />
   <div className="navbar">
+  <Dashboard/>
     <div className="nav_links">
       <Link to="/man">Man</Link>
       <Link to="/woman">Woman</Link>
@@ -48,6 +50,7 @@ return (
       <div className="nav_shoppingbagcounter">
           {shoppingbagCounter(cart)}
         </div>
+
     </div>
 
   </div>

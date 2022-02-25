@@ -3,20 +3,20 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import { registerWithEmailAndPassword, signInWithGoogle } from "../firebase"
 
-function Register({setShowRegister}) {
+function Register({setShowRegister, setShowReset}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [user, loading] = useAuthState(auth);
-  // const [setShowRegister] = useState()
 
   const register = () => {
     if (!name) alert("Please enter name");
     registerWithEmailAndPassword(name, email, password);
   };
   useEffect(() => {
-    if (loading) return;
+    setShowReset(false)
   }, [user, loading]);
+
 
   return (
     <div className="register">
@@ -52,7 +52,7 @@ function Register({setShowRegister}) {
           Register with Google
         </button>
         <div>
-          Already have an account? <button onClick={() => setShowRegister(false)}>Login</button>{" "} now.
+          Already have an account? <button className="loginButton" onClick={() => setShowRegister(false) }>Login now</button>{" "}
         </div>
       </div>
     </div>

@@ -148,6 +148,7 @@ nav_name {
 }
 
 .squaredButton {
+  cursor: pointer;
   background-color: #3c2800;
   color: #c7c29b;
   border: none;
@@ -163,6 +164,7 @@ nav_name {
 }
 
 .addButton {
+  cursor: pointer;
   background-color: #956503;
   color: #c7c29b;
   border: none;
@@ -181,6 +183,7 @@ nav_name {
 }
 
 .fa-trash {
+  cursor: pointer;
   position: relative;
   z-index: 500;
   left: 395px;
@@ -199,6 +202,7 @@ nav_name {
 }
 
 .OrderButton {
+  cursor: pointer;
   position: relative;
   background-color: #956503;
   color: #e6dcc8;
@@ -217,6 +221,32 @@ nav_name {
 }
 .OrderButton:hover:active {
   color: #3c2800;
+}
+
+.forgotPasswordButton,
+.loginButton {
+  background-color: #3c2800;
+  border: none;
+  border-radius: 5px;
+  color: #c7c29b;
+  padding: 5px;
+  cursor: pointer;
+}
+.forgotPasswordButton:hover,
+.loginButton:hover {
+  color: white;
+}
+
+.registerButton {
+  background-color: #c7c29b;
+  border: none;
+  border-radius: 5px;
+  color: #3c2800;
+  padding: 5px;
+  cursor: pointer;
+}
+.registerButton:hover {
+  color: black;
 }
 
 .oops {
@@ -531,6 +561,7 @@ nav_name {
 }
 
 .login__btn {
+  cursor: pointer;
   padding: 10px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -538,9 +569,15 @@ nav_name {
   color: #c7c29b;
   background-color: #3c2800;
 }
+.login__btn:hover {
+  color: white;
+}
 
 .login__google {
   background-color: #d59d24;
+}
+.login__google:hover {
+  color: white;
 }
 
 .login div {
@@ -573,6 +610,7 @@ nav_name {
 }
 
 .register__btn {
+  cursor: pointer;
   padding: 10px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -580,13 +618,99 @@ nav_name {
   color: #c7c29b;
   background-color: #3c2800;
 }
+.register__btn:hover {
+  color: white;
+}
 
 .register__google {
   background-color: #d59d24;
 }
+.register__google:hover {
+  color: white;
+}
 
 .register div {
   margin-top: 17px;
+}
+
+.reset {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -40px;
+}
+
+.reset__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #e6dcc8;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.reset__textBox {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.reset__btn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  color: #c7c29b;
+  background-color: #3c2800;
+}
+.reset__btn:hover {
+  color: white;
+}
+
+.reset div {
+  margin-top: 17px;
+}
+
+.dashboard {
+  position: absolute;
+  height: 20px;
+  width: 100vw;
+  display: flex;
+  bottom: -1px;
+}
+
+.dashboard__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 10vw;
+  color: #c7c29b;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard__btn {
+  width: 50px;
+  padding: 3px;
+  font-size: 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #c7c29b;
+}
+.dashboard__btn:hover {
+  color: #e6dcc8;
+}
+
+.dashboard div {
+  margin-top: 0px;
 }
 
 body {
