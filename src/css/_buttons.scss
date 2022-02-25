@@ -12,6 +12,9 @@
     cursor: pointer;
     &:hover {
         color: $midbrown;
+        &:active {
+            color: $brown;
+        }
     }
 }
 
@@ -43,8 +46,7 @@
     &:hover {
         color: $midbrown;
         &:active {
-            background-color: $midbrown;
-            color: $offwhite;
+            color: $darkbrown;
         }
     }
 }
@@ -70,7 +72,7 @@
 .OrderButton {
     position: relative;
     background-color: $brown;
-    color: $offwhite;
+    color: $pale;
     border: none;
     height: 25px;
     width: 242px;
@@ -82,5 +84,8 @@
     bottom: 5px;
     &:hover {
         color: $midbrown;
+        &:active {
+            color: $darkbrown;
+        }
     }
 }

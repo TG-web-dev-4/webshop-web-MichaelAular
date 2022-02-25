@@ -178,7 +178,7 @@ export const product = [
     imgName: "014.jpg",
     size: [36, 37, 38, 39, 40, 41, 42],
     title: "long walks on the beach",
-    info: "We love laughing at Padre Afero. That means going out ánd staying in. Are you that normal girl  that is always in for a good banter, just like us? Do  you like walks in the park, watching movies and going to the pub on Sunday for roast dinner? Do your friends say about you that your friends and family are realy important to you? That you are easy-going and like to stay in with a glass of wine and a DVD? Then Truim is teh Sandal for you. Truism. Our savest choice.",
+    info: "We love laughing at Padre Afero. That means going out ánd staying in. Are you that normal girl that is always in for a good banter, just like us? Do you like long walks in the park, watching movies and going to the pub on Sunday for roast dinner? Do your friends say about you that they and your family are realy important to you? That you are easy-going and like to stay in with a glass of wine and a DVD? Then Truim is the Sandal for you. Truism. Our savest choice.",
   },
   {
     id: "15",

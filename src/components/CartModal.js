@@ -44,7 +44,7 @@ const CartModal = (props) => {
 
   return (
     <div
-      className={`modal ${props.show ? "show" : ""}`}
+      className={`modal ${props.showCart ? "show" : ""}`}
       onClick={props.onClose}
     >
       <div className="modal_content" onClick={(e) => e.stopPropagation()}>
@@ -59,7 +59,7 @@ const CartModal = (props) => {
         </div>
         <div className="modal_body">
           {itemInCart}
-          {itemInCart.length === 0 && <div className="empty">Bag is Empty</div>}
+          {itemInCart.length === 0 && <div className="empty">EMPTY BAG</div>}
           </div>
         <div className="total_checkout">
           Total: €{calcTotalPrice(cart)}

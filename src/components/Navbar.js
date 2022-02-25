@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import React, { useState } from "react";
 import CartModal from "./CartModal";
+import LoginModal from "./LoginModal";
 
 export default function NavBar() {
  const counter = useSelector(state => state.shopReducer);
@@ -14,19 +15,19 @@ export default function NavBar() {
     return totalAmount;
   }
 
-  console.log(counter.cart)
-
   const displayedCounter = () => {
     if (counter <= 0) shoppingbagCounter = 0;
     if (counter > 0) shoppingbagCounter = counter;
   }
   displayedCounter()
 
-  const [show, setShow] = useState(false)
+  const [showCart, setShowCart] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
 
 return (
   <>
-  <CartModal title="Discrete Brown Shoppingbag" onClose={() => setShow(false)} show={show} count={shoppingbagCounter}/>
+  <CartModal title="Discrete Brown Shoppingbag" onClose={() => setShowCart(false)} showCart={showCart} count={shoppingbagCounter}/>
+  <LoginModal onClose={() => setShowLogin(false)} showLogin={showLogin} />
   <div className="navbar">
     <div className="nav_links">
       <Link to="/man">Man</Link>
@@ -42,8 +43,8 @@ return (
     <div className="nav_icons">
       <Link to="/" className="fas fa-home" />
       <link className="fas fa-search" />
-      <link className="fas fa-user" />
-      <link className="fas fa-shopping-bag" onClick={() => setShow(true)} />
+      <link className="fas fa-user" onClick={() => setShowLogin(true)} />
+      <link className="fas fa-shopping-bag" onClick={() => setShowCart(true)} />
       <div className="nav_shoppingbagcounter">
           {shoppingbagCounter(cart)}
         </div>

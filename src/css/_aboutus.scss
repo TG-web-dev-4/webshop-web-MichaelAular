@@ -1,0 +1,27 @@
+.aboutus_container1 {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 100vh;
+    margin-bottom: 2px;
+}
+
+.aboutus_text {
+    display: flex;
+    font-size: 1.2em;
+    width: 50vw;
+    text-align: justify;
+}
+
+.aboutus_img {
+    position: relative;
+    display: flex;
+    width: 30vw;
+    height: 90vh;
+    background-image: url('../images/photo/optie4.jpg');
+    background-size: cover;
+    top: 75px;
+    border-radius: 2px;
+}
