@@ -10,9 +10,8 @@
   flex-direction: row;
   align-items: center;
   top: 0px;
-  left: -10px;
-  height: 80px;
-  width: 101vw;
+  height: 90px;
+  width: 100vw;
   background-color: white;
   color: black;
 }
@@ -26,6 +25,7 @@
 
 .nav_links {
   display: flex;
+  flex-direction: row;
   gap: 22px;
   font-size: 1.1em;
   font-weight: bold;
@@ -44,7 +44,7 @@
   color: #956503;
 }
 
-nav_name {
+.nav_name {
   margin-top: 10px;
   font-size: 1.5em;
 }
@@ -54,8 +54,8 @@ nav_name {
   font-size: 1em;
   text-align: center;
   padding: 1px;
-  height: 12px;
-  width: 12px;
+  height: 20px;
+  width: 20px;
   border: 2px solid white;
   border-radius: 50%;
   left: -20px;
@@ -124,7 +124,8 @@ nav_name {
 }
 
 .home_text {
-  margin-right: 50px;
+  margin-right: 3vw;
+  text-align: justify;
 }
 
 .bigblackbutton {
@@ -272,9 +273,8 @@ nav_name {
   position: relative;
   display: flex;
   flex-direction: row;
-  left: -20px;
   width: 100vw;
-  height: 520px;
+  height: 80vh;
   padding-left: 9vw;
   padding-right: 9vw;
   background-color: #c7c29b;
@@ -285,7 +285,7 @@ nav_name {
   position: relative;
   height: 600px;
   width: auto;
-  top: -50px;
+  top: -30px;
   box-shadow: 3px 3px 10px black;
 }
 
@@ -294,15 +294,15 @@ nav_name {
   width: 400px;
   margin-right: 12vw;
   line-height: 0.9;
+  margin-top: 50px;
 }
 
 .productpage_button_container {
   position: absolute;
   display: flex;
   flex-direction: row;
-  height: 40px;
-  width: 400px;
-  bottom: 50px;
+  height: 27px;
+  bottom: 125px;
 }
 
 .productpage_price {
@@ -365,6 +365,7 @@ nav_name {
 
 .modal_content {
   width: 500px;
+  max-width: 90vw;
   background-color: #c7c29b;
   border-radius: 4px;
   box-shadow: 3px 3px 12px #3c2800;
@@ -676,11 +677,11 @@ nav_name {
 }
 
 .dashboard {
-  position: absolute;
+  position: relative;
   height: 20px;
-  width: 100vw;
   display: flex;
-  bottom: -1px;
+  bottom: 5px;
+  flex-direction: row;
 }
 
 .dashboard__container {
@@ -693,6 +694,7 @@ nav_name {
   color: #c7c29b;
   display: flex;
   flex-direction: row;
+  font-size: 24px;
 }
 
 .dashboard__btn {
@@ -713,15 +715,173 @@ nav_name {
   margin-top: 0px;
 }
 
+/* On screens that are 1080px or less */
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 120px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .nav_links {
+    flex-direction: row;
+    position: absolute;
+    top: 30px;
+  }
+
+  .nav_name {
+    position: relative;
+    font-size: 1em;
+    top: 15px;
+    pointer-events: none;
+  }
+
+  .dashboard__container {
+    position: absolute;
+    font-size: 12px;
+    top: 30px;
+    width: 95vw;
+    left: -52.5vw;
+    justify-content: center;
+  }
+
+  .dashboard__btn {
+    padding: 0px;
+    height: 10px;
+    font-size: 8px;
+    margin-top: -10px;
+  }
+
+  .nav_icons {
+    position: relative;
+    font-size: 0.7em;
+    bottom: 20px;
+    gap: 15px;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .nav_icons :hover {
+    color: #956503;
+  }
+
+  .nav_shoppingbagcounter {
+    height: 18px;
+    width: 18px;
+    font-size: larger;
+  }
+
+  .home_img_container {
+    left: 2.5vw;
+    top: 65px;
+    width: 95vw;
+    height: 70vh;
+    background-position: -200px 120px;
+    background-size: 300vw;
+    box-shadow: 2px 2px 5px #956503;
+  }
+
+  .home_img_text {
+    font-size: 5em;
+    left: 20px;
+    top: 10%;
+  }
+
+  .home_summeradd_container {
+    height: 750px;
+    width: 90vw;
+    left: 10vw;
+    top: 15vh;
+  }
+
+  .home_summeradd_text {
+    left: 70px;
+    top: 330px;
+    width: 60vw;
+  }
+
+  .home_text {
+    margin-top: 360px;
+    margin-left: 10px;
+  }
+
+  .overview_img_container {
+    width: 110vw;
+    height: 75vw;
+  }
+
+  .overview {
+    margin-top: 60px;
+  }
+
+  .productpage {
+    flex-direction: column;
+  }
+
+  .productpage_text {
+    width: 90vw;
+    margin-left: -5vw;
+    margin-right: 30vw;
+  }
+
+  .productpage_pic {
+    position: absolute;
+    top: 550px;
+    left: -20px;
+  }
+
+  .productpage_button_container {
+    bottom: 0px;
+  }
+
+  .productpage_price {
+    font-size: 40px;
+  }
+
+  .colorselector {
+    width: 120px;
+  }
+
+  .modal_header {
+    margin-left: 25px;
+  }
+
+  .info_img {
+    left: -15px;
+    width: 120px;
+  }
+
+  .cartitem_img {
+    width: 150%;
+    transform: translateY(-55%);
+  }
+
+  .fa-trash {
+    left: 270px;
+    top: -50px;
+  }
+
+  .OrderButton {
+    right: -90px;
+    width: 160px;
+  }
+
+  .empty {
+    font-size: 1.68em;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   position: absolute;
   font-family: mainFont;
   font-size: 1.5em;
   padding-top: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
   width: 100vw;
   overflow-x: hidden;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {

@@ -1,9 +1,9 @@
 .dashboard {
-  position: absolute;
+  position: relative;
     height: 20px;
-    width: 100vw;
     display: flex;
-    bottom: -1px;
+    bottom: 5px;
+    flex-direction: row;
   }
   .dashboard__container {
     width: 100%;
@@ -15,6 +15,7 @@
     color: $offwhite;
     display: flex;
     flex-direction: row;
+    font-size: 24px;
   }
   .dashboard__btn {
     width: 50px;

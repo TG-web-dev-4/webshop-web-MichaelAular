@@ -2,9 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    left: -20px;
     width: 100vw;
-    height: 520px;
+    height: 80vh;
     padding-left: 9vw;
     padding-right: 9vw;
     background-color: $offwhite;
@@ -15,7 +14,7 @@
     position: relative;
     height: 600px;
     width: auto;
-    top: -50px;
+    top: -30px;
     box-shadow: 3px 3px 10px $black;
 }
 
@@ -24,15 +23,15 @@
     width: 400px;
     margin-right: 12vw;
     line-height: 0.9;
+    margin-top: 50px;
 }
 
 .productpage_button_container {
     position: absolute;
     display: flex;
     flex-direction: row;
-    height: 40px;
-    width: 400px;
-    bottom: 50px;
+    height: 27px;
+    bottom: 125px;
 }
 
 .productpage_price {
