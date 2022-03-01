@@ -1,0 +1,25 @@
+.contact {
+    z-index: -4;
+    height:92vh;
+    width: 100vw;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px $offwhite50;
+    line-height: 0%;
+    background-image: url(../images/photo/optie4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: sepia(90%);
+}
+
+.contact_txt {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    top: 15vh;
+
+    background-color: $offwhite50;
+    padding: 50px;
+    border-radius: 30px;
+}
