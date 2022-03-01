@@ -1,4 +1,3 @@
-import Addbutton from "../components/Addtocartbutton";
 import React, { useEffect} from "react";
 
 export default function Contact() {
@@ -9,7 +8,6 @@ export default function Contact() {
     return (
         <>
         <h2>Contact</h2>
-        <Addbutton />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget felis
         scelerisque, consectetur leo sed, tristique odio. Aenean libero purus,
         iaculis ut tortor vitae, congue consequat mi. Sed tempus scelerisque

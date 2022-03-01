@@ -14,7 +14,8 @@
 @import "./register";
 @import "./reset";
 @import "./dasboard";
-@import "./mediaqueries";
+@import "./mediaqueries_mob";
+@import "./mediaqueries_tab";
 
 *, *::before, *::after {
   box-sizing: border-box;
