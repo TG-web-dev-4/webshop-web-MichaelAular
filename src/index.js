@@ -12,7 +12,8 @@ ReactDOM.render(
 
   <React.StrictMode>
     <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={webshop-web-MichaelAular}>
       <App />
     </BrowserRouter>
     </Provider>
