@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/webshop-web-MichaelAular/static/css/main.7dd1693e.css",
+    "main.js": "/webshop-web-MichaelAular/static/js/main.d669060e.js",
+    "static/media/018.jpg": "/webshop-web-MichaelAular/static/media/018.309e6d8b84403e9870de.jpg",
+    "static/media/004.jpg": "/webshop-web-MichaelAular/static/media/004.50ac4ee5ddb48f690cd9.jpg",
+    "static/media/himalaya.ttf": "/webshop-web-MichaelAular/static/media/himalaya.257b2541c33ff18f5985.ttf",
+    "static/media/009.jpg": "/webshop-web-MichaelAular/static/media/009.58e6d53b68d654b214f0.jpg",
+    "static/media/003.jpg": "/webshop-web-MichaelAular/static/media/003.acfbd484647964b93954.jpg",
+    "static/media/008.jpg": "/webshop-web-MichaelAular/static/media/008.2c4f3c605fe703d520b0.jpg",
+    "static/media/005.jpg": "/webshop-web-MichaelAular/static/media/005.9ad3bb5293eef39c5258.jpg",
+    "static/media/optie4.jpg": "/webshop-web-MichaelAular/static/media/optie4.23af20f9edef63190a97.jpg",
+    "static/media/optie4.jpeg": "/webshop-web-MichaelAular/static/media/optie4.f6f1f8e18c1f8e88b3a5.jpeg",
+    "static/media/012.jpg": "/webshop-web-MichaelAular/static/media/012.56b78acddac3a8a2b50e.jpg",
+    "static/media/002.jpg": "/webshop-web-MichaelAular/static/media/002.90ccbe497c80b7dc8ce3.jpg",
+    "static/media/optie2.jpg": "/webshop-web-MichaelAular/static/media/optie2.f230f5d1be4383344b4f.jpg",
+    "static/media/001.jpg": "/webshop-web-MichaelAular/static/media/001.8ffd4fae578b0625825e.jpg",
+    "static/media/000b.jpg": "/webshop-web-MichaelAular/static/media/000b.d9506aa881b850a3d4e1.jpg",
+    "static/media/017.jpg": "/webshop-web-MichaelAular/static/media/017.828a21d0e044f27d736c.jpg",
+    "static/media/014.jpg": "/webshop-web-MichaelAular/static/media/014.e7f5ac32e94ae5def7ae.jpg",
+    "static/media/013.jpg": "/webshop-web-MichaelAular/static/media/013.5d1cecfb1cc08509b42d.jpg",
+    "static/media/010.jpg": "/webshop-web-MichaelAular/static/media/010.dbad53e8316397e700b5.jpg",
+    "static/media/015.jpg": "/webshop-web-MichaelAular/static/media/015.f4378e7a9af99d7c4570.jpg",
+    "static/media/optie5.jpeg": "/webshop-web-MichaelAular/static/media/optie5.e11740979c593ad96b28.jpeg",
+    "static/media/011.jpg": "/webshop-web-MichaelAular/static/media/011.1da317c85ed823f2aff4.jpg",
+    "static/media/016.jpg": "/webshop-web-MichaelAular/static/media/016.73bea8ed05e21bedb4ed.jpg",
+    "static/media/000a.webp": "/webshop-web-MichaelAular/static/media/000a.4c17b348dbf3138f867d.webp",
+    "static/media/007.jpg": "/webshop-web-MichaelAular/static/media/007.7707b09a72ed8e4fa3b0.jpg",
+    "static/media/sanicon.png": "/webshop-web-MichaelAular/static/media/sanicon.aac56fd38464a005ab0c.png",
+    "static/media/optie01.webp": "/webshop-web-MichaelAular/static/media/optie01.b6a5bfad72f18cc6f6c4.webp",
+    "static/media/006.jpg": "/webshop-web-MichaelAular/static/media/006.3015f47f604f380103ec.jpg",
+    "index.html": "/webshop-web-MichaelAular/index.html",
+    "main.7dd1693e.css.map": "/webshop-web-MichaelAular/static/css/main.7dd1693e.css.map",
+    "main.d669060e.js.map": "/webshop-web-MichaelAular/static/js/main.d669060e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd1693e.css",
+    "static/js/main.d669060e.js"
+  ]
+}
