@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <div className="contact">
       <div className="contact_txt">
-        <h2>Contact</h2>
-        <p>Padre Afero</p>
+        <h2>Padre Afero</h2>
         <p>420 N Rodeo Dr</p>
         <p>Beverly Hills, CA 90210</p>
-        <p>555-2368</p>
-        <p>info@padreafero.com</p>
+        <p>U.S-of-freaking-A</p>
+        <p><a href="tel:+555-2368">555-2368</a></p>
+        <p><a href="email:info@padreafero.com">info@padreafero.com</a></p>
       </div>
     </div>
   );
