@@ -260,7 +260,6 @@
   margin-top: 15vh;
   padding-top: 30px;
   line-height: 0.1;
-  left: -20px;
 }
 
 .oops_icon {
@@ -851,6 +850,17 @@
     width: 120px;
   }
 
+  .aboutus_img {
+    width: 100vw;
+    height: 40vh;
+    left: 12.5vw;
+    top: 0px;
+  }
+
+  .aboutus_text {
+    width: 70vw;
+  }
+
   .modal_header {
     margin-left: 25px;
   }
@@ -877,6 +887,11 @@
 
   .empty {
     font-size: 1.65em;
+  }
+
+  .oops {
+    line-height: 1;
+    height: 60vh;
   }
 }
 /* On screens that are 1080px or less */

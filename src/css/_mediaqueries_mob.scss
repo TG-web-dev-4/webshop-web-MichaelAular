@@ -43,7 +43,6 @@
     }
   }
   .nav_shoppingbagcounter {
-
     height: 30px;
     width: 30px;
     left: -12vw;
@@ -117,6 +116,16 @@
   .colorselector {
     width: 120px;
   }
+  /// about us ///
+  .aboutus_img {
+    width: 100vw;
+    height: 40vh;
+    left:12.5vw;
+    top: 0px;
+  }
+  .aboutus_text {
+    width:70vw;
+  }
   /// MODAL ///
   .modal_header {
     margin-left: 25px;
@@ -139,5 +148,10 @@
   }
   .empty {
     font-size: 1.65em;
+  }
+  /// oops page///
+  .oops {
+    line-height: 1;
+    height: 60vh;
   }
 }
