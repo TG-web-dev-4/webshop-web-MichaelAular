@@ -98,17 +98,18 @@
   .productpage_text {
     width: 90vw;
     margin-left: -5vw;
-    margin-right: 30vw;
+    margin-top: 80px;
   }
   .productpage_pic {
-    top: 60px;
+    top: 0px;
     height: auto;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 10px;
+    left: -5vw;
   }
   .productpage_button_container {
     padding-top: 20px;
-    bottom: 0px;
+    top: 10px;
   }
   .productpage_price {
     font-size: 40px;
@@ -154,8 +155,10 @@
     line-height: 1;
     height: 60vh;
   }
-  /// contact page///
-
+  .footerContainer {
+    position: fixed;
+    // bottom: 0;
+  }
 }
 
 

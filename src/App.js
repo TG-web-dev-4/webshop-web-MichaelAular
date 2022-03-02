@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./routes/home";
 import Man from "./routes/man";
 import Woman from "./routes/woman";
@@ -26,6 +27,8 @@ function App() {
         <Route path="*" element={<Oops />}/>
       </Routes>
       </ScrollToTop>
+      <Footer/>
+
       </>
   );
 }

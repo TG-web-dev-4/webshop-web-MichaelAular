@@ -301,7 +301,7 @@
   display: flex;
   flex-direction: row;
   height: 27px;
-  bottom: 125px;
+  top: 480px;
 }
 
 .productpage_price {
@@ -715,6 +715,61 @@
   margin-top: 0px;
 }
 
+.contact {
+  z-index: -4;
+  height: 92vh;
+  width: 100vw;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 5px rgba(199, 194, 155, 0.5);
+  line-height: 0%;
+  background-image: url(../images/photo/optie4.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: sepia(90%);
+}
+
+.contact_txt {
+  position: relative;
+  width: 90vw;
+  max-width: 550px;
+  height: 77vh;
+  margin: auto;
+  top: 10vh;
+  background-color: rgba(199, 194, 155, 0.5);
+  padding: 50px;
+  padding-left: 10vw;
+  border-radius: 30px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerContainer {
+  position: relative;
+  width: 100vw;
+  height: 43px;
+  background-color: rgba(60, 40, 0, 0.7);
+  bottom: 0px;
+  padding: 0px;
+  padding-left: 9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
+  color: #c7c29b;
+}
+
+.footer_icon {
+  position: relative;
+  height: 30px;
+  top: 10px;
+  width: auto;
+  margin-right: 20px;
+}
+
 /* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
   .navbar {
@@ -827,19 +882,20 @@
   .productpage_text {
     width: 90vw;
     margin-left: -5vw;
-    margin-right: 30vw;
+    margin-top: 80px;
   }
 
   .productpage_pic {
-    top: 60px;
+    top: 0px;
     height: auto;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 10px;
+    left: -5vw;
   }
 
   .productpage_button_container {
     padding-top: 20px;
-    bottom: 0px;
+    top: 10px;
   }
 
   .productpage_price {
@@ -892,6 +948,10 @@
   .oops {
     line-height: 1;
     height: 60vh;
+  }
+
+  .footerContainer {
+    position: fixed;
   }
 }
 /* On screens that are 1080px or less */
@@ -974,40 +1034,6 @@
     width: 120px;
   }
 }
-.contact {
-  z-index: -4;
-  height: 92vh;
-  width: 100vw;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 5px rgba(199, 194, 155, 0.5);
-  line-height: 0%;
-  background-image: url(../images/photo/optie4.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  filter: sepia(90%);
-}
-
-.contact_txt {
-  position: relative;
-  width: 90vw;
-  max-width: 550px;
-  height: 77vh;
-  margin: auto;
-  top: 10vh;
-  background-color: rgba(199, 194, 155, 0.5);
-  padding: 50px;
-  padding-left: 10vw;
-  border-radius: 30px;
-  line-height: 1;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
