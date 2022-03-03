@@ -277,7 +277,7 @@
 
 .productpage_pic {
   position: relative;
-  height: 650px;
+  height: 640px;
   width: auto;
   top: -2vh;
   box-shadow: 3px 3px 10px black;
@@ -285,7 +285,7 @@
 
 .productpage_text {
   text-align: justify;
-  width: 25vw;
+  width: 385px;
   margin-right: 12vw;
   line-height: 0.9;
   margin-top: 6vh;
@@ -296,7 +296,7 @@
   display: flex;
   flex-direction: row;
   height: 27px;
-  top: 580px;
+  top: 530px;
 }
 
 .productpage_price {
@@ -330,7 +330,7 @@
   background-color: #3c2800;
   color: #c7c29b;
   height: 25px;
-  width: 160px;
+  width: 145px;
   border-radius: 2px;
   border: none;
   margin: 1px;
@@ -1016,9 +1016,8 @@ a {
   }
 
   .productpage_text {
-    width: 90vw;
+    width: 80vw;
     margin-left: -5vw;
-    margin-right: 30vw;
   }
 
   .productpage_pic {
