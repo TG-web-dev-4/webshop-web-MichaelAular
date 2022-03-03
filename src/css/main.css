@@ -272,6 +272,7 @@
   padding-right: 9vw;
   background-color: #c7c29b;
   margin-top: 8vh;
+  margin-bottom: 100px;
 }
 
 .productpage_pic {
@@ -468,7 +469,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   line-height: 0;
-  margin-bottom: 43px;
+  margin-bottom: 100px;
 }
 
 .overview_img_container {
@@ -506,8 +507,8 @@
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 95vw;
-  height: 100vh;
+  width: 100vw;
+  margin-bottom: 100px;
 }
 
 .aboutus_text {
@@ -521,13 +522,13 @@
   position: relative;
   display: flex;
   width: 30vw;
-  height: 90vh;
+  height: 600px;
   background-image: url("../images/photo/optie4.jpg");
   background-size: cover;
   top: 75px;
   border-radius: 2px;
-  background-position-x: -90px;
   background-repeat: no-repeat;
+  background-position-y: -50px;
 }
 
 .login {
@@ -710,8 +711,9 @@
 }
 
 .contact {
+  position: relative;
   z-index: -4;
-  height: 92vh;
+  height: calc(100vh - 60px);
   width: 100vw;
   font-size: 1.5em;
   text-shadow: 1px 1px 5px rgba(199, 194, 155, 0.5);
@@ -726,15 +728,15 @@
 .contact_txt {
   position: relative;
   width: 90vw;
-  max-width: 550px;
-  height: 77vh;
+  max-width: 500px;
+  height: 60vh;
   margin: auto;
   top: 10vh;
   background-color: rgba(199, 194, 155, 0.5);
-  padding: 50px;
-  padding-left: 10vw;
+  padding: 40px;
+  padding-left: 8vw;
   border-radius: 30px;
-  line-height: 1;
+  line-height: 0.8;
   font-weight: bold;
 }
 
@@ -744,9 +746,13 @@ a {
 }
 
 .footerContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   position: absolute;
   width: 100vw;
-  height: 43px;
+  height: 100px;
   background-color: rgba(199, 194, 155, 0.5);
   bottom: 0px;
   padding-left: 9vw;
@@ -758,9 +764,16 @@ a {
 .footer_icon {
   position: relative;
   height: 30px;
-  top: 10px;
   width: auto;
   margin-right: 20px;
+}
+
+.payments {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  font-size: 30px;
 }
 
 /* On screens that are 600px or less */
@@ -864,27 +877,25 @@ a {
 
   .overview {
     margin-top: 60px;
-    margin-bottom: 43px;
   }
 
   .productpage {
     flex-direction: column;
     width: 100vw;
-    padding-bottom: 60px;
+    height: auto;
   }
 
   .productpage_text {
-    width: 90vw;
-    margin-left: -5vw;
+    width: 80vw;
+    margin-left: -10vw;
     margin-top: 80px;
   }
 
   .productpage_pic {
     top: 0px;
     height: auto;
-    width: 90vw;
-    margin-bottom: 10px;
-    left: -5vw;
+    width: 100vw;
+    left: -20vw;
   }
 
   .productpage_button_container {
@@ -897,18 +908,21 @@ a {
   }
 
   .colorselector {
-    width: 120px;
+    width: 100px;
   }
 
   .aboutus_img {
     width: 100vw;
-    height: 40vh;
-    left: 12.5vw;
+    height: 100vh;
     top: 0px;
   }
 
   .aboutus_text {
     width: 70vw;
+  }
+
+  .aboutus_container {
+    margin-bottom: 100px;
   }
 
   .modal_header {

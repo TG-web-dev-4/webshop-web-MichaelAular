@@ -1,6 +1,7 @@
 .contact {
+    position: relative;
     z-index: -4;
-    height:92vh;
+    height: calc(100vh - 60px);
     width: 100vw;
     font-size: 1.5em;
     text-shadow: 1px 1px 5px $offwhite50;
@@ -15,15 +16,15 @@
 .contact_txt {
     position: relative;
     width: 90vw;
-    max-width: 550px;
-    height: 77vh;
+    max-width: 500px;
+    height: 60vh;
     margin: auto;
     top: 10vh;
     background-color: $offwhite50;
-    padding: 50px;
-    padding-left: 10vw;
+    padding: 40px;
+    padding-left: 8vw;
     border-radius: 30px;
-    line-height: 1;
+    line-height: 0.8;
     font-weight: bold;
 }
 a {

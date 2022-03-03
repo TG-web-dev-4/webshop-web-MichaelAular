@@ -1,7 +1,11 @@
 .footerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: absolute;
     width: 100vw;
-    height: 43px;
+    height: 100px;
     background-color: $offwhite50;
     bottom: 0px;
     padding-left: 9vw;
@@ -12,7 +16,14 @@
 .footer_icon {
     position: relative;
     height: 30px;
-    top: 10px;
     width: auto;
     margin-right: 20px;
+}
+
+.payments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    font-size: 30px;
 }

@@ -3,9 +3,8 @@
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 95vw;
-    height: 100vh;
-
+    width: 100vw;
+    margin-bottom: 100px;
 }
 
 .aboutus_text {
@@ -19,11 +18,11 @@
     position: relative;
     display: flex;
     width: 30vw;
-    height: 90vh;
+    height: 600px;
     background-image: url('../images/photo/optie4.jpg');
     background-size: cover;
     top: 75px;
     border-radius: 2px;
-    background-position-x: -90px;
     background-repeat: no-repeat;
+    background-position-y: -50px;
 }
