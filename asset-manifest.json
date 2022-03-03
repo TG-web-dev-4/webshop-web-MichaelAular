@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webshop-web-MichaelAular/static/css/main.57eb70c3.css",
-    "main.js": "/webshop-web-MichaelAular/static/js/main.f479cc23.js",
+    "main.css": "/webshop-web-MichaelAular/static/css/main.169c76ee.css",
+    "main.js": "/webshop-web-MichaelAular/static/js/main.61b8707c.js",
     "static/media/018.jpg": "/webshop-web-MichaelAular/static/media/018.309e6d8b84403e9870de.jpg",
     "static/media/004.jpg": "/webshop-web-MichaelAular/static/media/004.50ac4ee5ddb48f690cd9.jpg",
     "static/media/himalaya.ttf": "/webshop-web-MichaelAular/static/media/himalaya.257b2541c33ff18f5985.ttf",
@@ -30,11 +30,11 @@
     "static/media/optie01.webp": "/webshop-web-MichaelAular/static/media/optie01.b6a5bfad72f18cc6f6c4.webp",
     "static/media/006.jpg": "/webshop-web-MichaelAular/static/media/006.3015f47f604f380103ec.jpg",
     "index.html": "/webshop-web-MichaelAular/index.html",
-    "main.57eb70c3.css.map": "/webshop-web-MichaelAular/static/css/main.57eb70c3.css.map",
-    "main.f479cc23.js.map": "/webshop-web-MichaelAular/static/js/main.f479cc23.js.map"
+    "main.169c76ee.css.map": "/webshop-web-MichaelAular/static/css/main.169c76ee.css.map",
+    "main.61b8707c.js.map": "/webshop-web-MichaelAular/static/js/main.61b8707c.js.map"
   },
   "entrypoints": [
-    "static/css/main.57eb70c3.css",
-    "static/js/main.f479cc23.js"
+    "static/css/main.169c76ee.css",
+    "static/js/main.61b8707c.js"
   ]
 }
