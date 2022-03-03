@@ -32,14 +32,11 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
-
 ::-webkit-scrollbar {
   width: 1vw;}
-
 ::-webkit-scrollbar-thumb {
   background: $darkbrown70;
   border-radius: 4px;
   box-shadow: inset -1px -1px 5px $black;}
-
 ::-webkit-scrollbar-thumb:hover {
   background: $darkbrown}

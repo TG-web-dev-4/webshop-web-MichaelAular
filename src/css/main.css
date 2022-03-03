@@ -753,13 +753,13 @@ a {
   position: relative;
   width: 100vw;
   height: 43px;
-  background-color: rgba(60, 40, 0, 0.7);
+  background-color: rgba(199, 194, 155, 0.5);
   bottom: 0px;
   padding: 0px;
   padding-left: 9vw;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.5em;
-  color: #c7c29b;
+  color: #3c2800;
 }
 
 .footer_icon {
@@ -871,6 +871,7 @@ a {
 
   .overview {
     margin-top: 60px;
+    margin-bottom: 43px;
   }
 
   .productpage {
