@@ -1,0 +1,122 @@
+.modal {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal_content {
+  width: 500px;
+  max-width: 90vw;
+  background-color: $offwhite;
+  border-radius: 4px;
+  box-shadow: 3px 3px 12px $darkbrown;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+  overflow-y: initial;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal.show .modal_content {
+  transform: translateY(0);
+}
+
+.modal_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.7em;
+}
+
+.modal_close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal_body {
+  font-family: mainFont;
+  padding: 10px;
+  border-top: 2px solid $darkbrown;
+  padding-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 600;
+}
+
+.cartitem_name {
+  position: relative;
+  font-size: 1.4em;
+  line-height: 0;
+  margin-top: 40px;
+}
+
+.cartitem_info {
+  position: relative;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  color: $darkbrown;
+  position: relative;
+  font-size: 1em;
+  line-height: 0;
+  width: 430px;
+  padding-left: 10px;
+  border-bottom: 2px solid $darkbrown;
+}
+
+.info_text {
+  width: 200px;
+}
+
+.info_img {
+  position: relative;
+  top: -25px;
+  height: 115px;
+  width: 250px;
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px $darkbrown;
+  filter: sepia(100%);
+  &:hover {
+    filter: sepia(50%);;
+  }
+}
+
+.cartitem_img {
+  width: 100%;
+  top:100%;
+  transform: translateY(-65%);
+}
+
+.total_checkout {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.empty {
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 900;
+  left: 160px;
+  top: 20px;
+  color: $pale;
+}

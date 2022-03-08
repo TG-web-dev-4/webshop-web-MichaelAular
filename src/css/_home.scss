@@ -1,0 +1,57 @@
+.home_img_container {
+    position: relative;
+    left: 45vw;
+    width: 50vw;
+    height: 80vh;
+    background-image: url('../images/photo/000a.webp');
+    background-position: 30vw -5vh;
+    background-size: 1500px;
+    background-attachment: fixed;
+}
+
+.home_img_text {
+    position: absolute;
+    width: 30vw;
+    height: 50vh;
+    font-size: 25vh;
+    left: 5vw;
+    top: 20vh;
+    line-height: 0.5;
+}
+
+.colored_txt {
+    color: $darkbrown
+}
+
+.shadow_txt {
+    text-shadow: 1px 1px 2px $darkbrown;
+}
+
+.home_summeradd_container {
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    top: 10vh;
+    left: -45vw;
+    background-color: $offwhite;
+    z-index: -1;
+}
+
+.home_summeradd_text {
+    position: relative;
+    width: 15vw;
+    top: -55vh;
+    left: -36vw;
+    font-size: 0.25em;
+    line-height: 0.7;
+}
+
+.home_summercollection_button {
+    position: relative;
+    top: 2vh;
+    z-index: 1;
+}
+
+.home_text {
+    text-align: justify;
+}

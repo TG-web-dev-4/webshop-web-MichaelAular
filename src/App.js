@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./routes/home";
+import Man from "./routes/man";
+import Woman from "./routes/woman";
+import Aboutus from "./routes/aboutus";
+import Contact from "./routes/contact";
+import Oops from "./routes/oops";
+import Productpage from "./routes/productpage";
+import "./css/main.css";
+import ScrollToTop from "./actions/scrolltotop";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <ScrollToTop>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="man" element={<Man />} />
+        <Route path="woman" element={<Woman />} />
+        <Route path="aboutus" element={<Aboutus />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="productpage/:id" element={<Productpage />} />
+        <Route path="*" element={<Oops />}/>
+      </Routes>
+      </ScrollToTop>
+      <Footer/>
+
+      </>
   );
 }
 

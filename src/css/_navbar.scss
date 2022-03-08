@@ -1,0 +1,60 @@
+@import "./colors";
+
+.navbar {
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    top: 0px;
+    height: 90px;
+    width: 100vw;
+    background-color: $white;
+    color: $black;
+    :link {
+        text-decoration:none;
+        color: $black;}
+    :visited {
+        color: $black;}
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    font-size: 1.1em;
+    font-weight: bold;
+    :hover {
+        color: $brown;}
+}
+
+.nav_icons {
+    display: flex;
+    font-size: 0.7em;;
+    position: relative;
+    gap: 15px;
+    :hover {
+        color: $brown;}
+}
+
+.nav_name {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.nav_shoppingbagcounter {
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    padding: 1px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid $white;
+    border-radius: 50%;
+    left: -20px;
+    top: -10px;
+    color: $white;
+    background-color: $black;
+}
+

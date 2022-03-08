@@ -1,0 +1,46 @@
+.productpage {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 650px;
+    padding-left: 19vw;
+    padding-right: 9vw;
+    background-color: $offwhite;
+    margin-top: 8vh;
+    margin-bottom: 100px;
+}
+
+.productpage_pic {
+    position: relative;
+    height: 640px;
+    width: auto;
+    top: -2vh;
+    box-shadow: 3px 3px 10px $black;
+}
+
+.productpage_text {
+    text-align: justify;
+    width: 385px;
+    margin-right: 12vw;
+    line-height: 0.9;
+    margin-top: 6vh;
+}
+
+.productpage_button_container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 27px;
+    top: 530px;
+}
+
+.productpage_price {
+    color: $darkbrown;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.productpage_infoblock {
+    position: relative;
+}

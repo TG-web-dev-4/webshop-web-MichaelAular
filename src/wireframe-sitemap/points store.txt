@@ -1,0 +1,19 @@
+punten nodig in react data:
+
+/// product ///
+pic: 001
+name: shoename
+collors: brown / white
+price: 96
+size: [38, 39, 40, 41, 42, 43, 44]
+
+/// user ///
+username: ""
+adres: ""
+email: ""
+loggedin: true/false
+
+/// shoppingcart ///
+items in cart: [product, product]
+total price: ""
+
